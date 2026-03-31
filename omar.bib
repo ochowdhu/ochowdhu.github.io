@@ -1,0 +1,1215 @@
+@inproceedings{chen2026secstleak,
+  author    = {Chen, Jesse and Yang, Rubin Yuchan and Musa, Ahmad and
+               Hussain, Syed Rafiul and Chowdhury, Omar and Rahaman, Sazzadur},
+  title     = {Secret State Leakage Attacks and Their Impacts on
+               {EMV} Contactless Payment Apps},
+  booktitle = {2026 IEEE Symposium on Security and Privacy ({SP})},
+  year      = {2026},
+  pages     = {TBD},
+  month     = may,
+  publisher = {IEEE Computer Society},
+  address   = {San Francisco, CA, USA},
+  doi       = {TBD},
+  areas = {Contactless Payments, EMV, Side-channel Attacks, Mobile Security, Protocol Analysis, Tamarin, Protocol Verification}
+}
+@inproceedings{danso2026ltl,
+  author    = {Kyei Danso, Priscilla and Hasan, Mohammad Saqib and
+               Balasubramanian, Niranjan and Chowdhury, Omar},
+  title     = {Syntax {Is} {Easy}, {Semantics} {Is} {Hard}: {Evaluating}
+               {LLMs} for {LTL} Translation},
+  booktitle = {Proceedings of the ACM Secure Development Conference (SecDev 2026)},
+  series    = {SecDev '26},
+  year      = {2026},
+  location  = {Montreal, QC, Canada},
+  publisher = {ACM},
+  address   = {New York, NY, USA},
+  pages     = {TBD},
+  doi       = {TBD},
+  url       = {https://conf.researchr.org/home/secdev-2026}, 
+  areas   = {LTL, Formal Methods, Natural Language Processing, Large Language Models, Software Specification}
+}
+
+@inproceedings{hossain2026goblin,
+  author    = {Lorch, Rob and Pirwani Dar, Muhammad Daniyal and Tinelli, Cesare and Chowdhury, Omar},
+  title     = {Parse This! {S}ummoning Context-Sensitive Inputs with {G}oblin},
+  booktitle = {Proceedings of the IEEE/ACM 48th International Conference on
+               Software Engineering (ICSE 2026)},
+  series    = {ICSE '26},
+  year      = {2026},
+  pages     = {TBD},
+  location  = {Rio de Janeiro, Brazil},
+  publisher = {ACM},
+  address   = {New York, NY, USA},
+  doi       = {TBD},
+  url       = {https://conf.researchr.org/track/icse-2026/icse-2026-research-track}, 
+  areas   = {Grammar-based Fuzzing, Context-sensitive Inputs, Protocol Testing, Software Testing, SMT Solvers},
+}
+
+@inproceedings{wu2026restricter,
+  author    = {Wu, Ka Lok and Jenkins, Christa and Stoller, Scott D. and Chowdhury, Omar},
+  title     = {Automatically Tightening Access Control Policies with {Restricter}},
+  booktitle = {Proceedings of the 32nd International Conference on Tools and Algorithms for the Construction and Analysis of Systems ({TACAS} 2026),
+               Held as Part of the European Joint Conferences on Theory
+               and Practice of Software, {ETAPS} 2026,
+               Turin, Italy, April 11--16, 2026},
+  series    = {Lecture Notes in Computer Science},
+  editor    = {Junges, Sebastian and Katz, Guy},
+  publisher = {Springer},
+  address   = {Cham},
+  year      = {2026},
+  volume    = {TBD},
+  pages     = {TBD},
+  doi       = {TBD},
+  areas = {Access Control, Policy Tightening, SMT Solvers, Formal Methods, Syntax-Guided Synthesis},
+}
+
+@inproceedings{AutomanSOSP,
+author = {Zhang, Zihao and Zhou, Ti and Jenkins, Christa and Chowdhury, Omar and Mu, Shuai},
+title = {AutoMan: Facilitating Verified Distributed Systems Development Through Automatic Code Generation and Manual Optimizations},
+year = {2025},
+isbn = {9798400718700},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3731569.3764822},
+doi = {10.1145/3731569.3764822},
+abstract = {Developing correct and performant distributed systems is notoriously challenging due to their complexity and scale. There are two main approaches to addressing correctness issues that stem from their complexity: (i) formal verification, and (ii) automatic compilation of specifications to implementations. The former provides machine-checked correctness guarantees along with good performance but requires substantial expert effort. In contrast, the latter can reduce developer effort, though often at the expense of rigorous correctness guarantees. In this paper, we design, develop, and evaluate the AutoMan workflow, which makes developing distributed systems with refinement-based formal verification techniques more accessible and practical for both experts and developers. AutoMan achieves this by automatically generating implementations and their corresponding verification obligations from formal system specifications. This is accomplished without placing trust in the code generator and without sacrificing end-to-end correctness or performance. AutoMan's use of refinement-based verification methodology for ensuring soundness allows hand-tuned performance-critical code and automatically generated code to harmoniously co-exist without jeopardizing end-to-end correctness guarantees. The effectiveness of AutoMan is demonstrated through the reimplementation of Multi-Paxos, PBFT, a sharded Key-Value store, and CausalMesh following the AutoMan methodology. In all cases, the use of AutoMan substantially reduced development effort (e.g., 70\%-97\% for Multi-Paxos), while the resulting systems maintained robust efficiency and correctness.},
+booktitle = {Proceedings of the ACM SIGOPS 31st Symposium on Operating Systems Principles (SOSP 2025)},
+pages = {768-785},
+numpages = {18},
+keywords = {distributed systems, formal verification, code generation},
+location = {Lotte Hotel World, Seoul, Republic of Korea},
+series = {SOSP '25},
+areas = {Implementation synthesis, Distributed systems, Refinement-based verification, Dafny, Deductive verification, Mode checking}
+}
+
+@inproceedings{esim,
+author = {Echeverria, Mitziu and Sadeghi, Aliakbar and Alam, G M Tasnim and Chowdhury, Omar},
+title = {On the Performance and Consistency Trade-off of the eSIM M2M Remote Provisioning Protocol},
+year = {2025},
+isbn = {9798400715303},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+nolinknolinkurl  = {https://doi.org/10.1145/3734477.3734712},
+doi = {10.1145/3734477.3734712},
+abstract = {This paper analyzes the Embedded SIM card's Machine-to-Machine Remote Provisioning Protocol's (eSIM M2M RSP) design. The eSIM M2M RSP simplifies 5G connectivity for IoT devices by securely delivering connection bootstrapping information over the air without human intervention. As IoT adoption with 5G connectivity surges, the eSIM infrastructure must handle a growing number of concurrent remote SIM provisioning requests. The statefulness and shared states of the RSP make it challenging and error-prone to implement concurrency without data races. The GSMA eSIM standard does not explicitly define any atomicity assumptions required for concurrent execution. A formal analysis of the standard-prescribed M2M RSP design reveals that explicit atomicity assumptions are necessary; without them, 31 data races can violate key invariants. During the responsible disclosure process, discussions with the standards body revealed that the M2M RSP design relies on unstated and implicit atomicity assumptions. However, we find that the standard prescribed implicit assumptions are not strong enough to maintain all the invariants. The identified race conditions can be exploited by third-party eSIM management platforms to defraud network operators. To mitigate these risks, we developed a fine-grained synchronization mechanism that we formally verified for correctness and empirically evaluated for performance. Empirical evaluations show that our synchronization mechanism ensures correctness while outperforming a baseline with a 6\texttimes{} speed up.},
+booktitle = {18th ACM Conference on Security and Privacy in Wireless and Mobile Networks (ACM WiSec)},
+pages = {40–52},
+numpages = {13},
+keywords = {esim, formal verification, mobile security, protocol analysis, wireless networks},
+location = {Arlington, VA, USA},
+series = {WiSec 2025},
+areas = {Protocol analysis, Race Conditions,Formal verification, Mobile security, Model Checking}
+}
+
+@article{namex509,
+author = {Sun, Yuteng and Debnath, Joyanta and Hong, Wenzheng and Chowdhury, Omar and Chau, Sze Yiu},
+title = {On the Unnecessary Complexity of Names in X.509 and Their Impact on Implementations},
+year = {2025},
+issue_date = {July 2025},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {2},
+number = {FSE},
+url = {https://doi.org/10.1145/3715785},
+doi = {10.1145/3715785},
+abstract = {TheX.509 Public Key Infrastructure (PKI) provides a cryptographically verifiable mechanism for authenticating a binding of an entity’s public-key with its identity, presented in a tamper-proof digital certificate. This often serves as a foundational building block for achieving different security guarantees in many critical applications and protocols (e.g., SSL/TLS). Identities in the context of X.509 PKI are often captured as names, which are encoded in certificates as composite records with different optional fields that can store various types of string values (e.g., ASCII, UTF8). Although such flexibility allows for the support of diverse name types (e.g., IP addresses, DNS names) and application scenarios, it imposes on library developers obligations to enforce unnecessarily convoluted requirements. Bugs in enforcing these requirements can lead to potential interoperability and performance issues, and might open doors to impersonation attacks. This paper focuses on analyzing how open-source libraries enforce the constraints regarding the formatting, encoding, and processing of complex name structures on X.509 certificate chains, for the purpose of establishing identities. Our analysis reveals that a portfolio of simplistic testing approaches can expose blatant violations of the requirements in widely used open-source libraries. Although there is a substantial amount of prior work that focused on testing the overall certificate chain validation process of X.509 libraries, the identified violations have escaped their scrutiny. To make matters worse, we observe that almost all the analyzed libraries completely ignore certain pre-processing steps prescribed by the standard. This begs the question of whether it is beneficial to have a standard so flexible but complex that none of the implementations can faithfully adhere to it. With our test results, we argue in the negative, and explain how simpler alternatives (e.g., other forms of identifiers such as Authority and Subject Key Identifiers) can be used to enforce similar constraints with no loss of security.},
+journal = {Proceedings of the ACM on Software Engineering, Volume 2, Issue FSE
+},
+month = jun,
+articleno = {FSE066},
+numpages = {21},
+keywords = {Compliance with standards, Identities and names, X.509 Certificates},
+areas = {X.509 PKI, Certificate Validation, Standard Compliance, Software Testing}
+}
+
+@INPROCEEDINGS{saecred,
+  author={Pirwani Dar, Muhammad Daniyal and Lorch, Rob and Sadeghi, Aliakbar and Sorcigli, Vincenzo and Gollier, Héloïse and Tinelli, Cesare and Vanhoef, Mathy and Chowdhury, Omar},
+  booktitle={2025 IEEE Symposium on Security and Privacy (SP)}, 
+  title={Saecred: A State-Aware, Over-the-Air Protocol Testing Approach for Discovering Parsing Bugs in SAE Handshake Implementations of COTS Wi-Fi Access Points}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={3691-3709},
+  keywords={Resistance;Protocols;Computer bugs;Closed box;Fuzzing;Search problems;Denial-of-service attack;Security;Wireless fidelity;Testing;fuzzing;network protocol security;wifi;authentication},
+  doi={10.1109/SP61157.2025.00211},
+  areas={Network Protocol Security, Grammar-based Fuzzing, Wireless Networks},
+  }
+
+@inproceedings{seqr,
+author = {Hasan, S Mahmudul and Tu, Che Wei and Hoque, Endadul and Chowdhury, Omar and Chau, Sze Yiu},
+title = {SeQR: A User-Friendly and Secure-by-Design Configurator for Enterprise Wi-Fi},
+year = {2025},
+isbn = {9798400713941},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+nolinknolinkurl  = {https://doi.org/10.1145/3706598.3714223},
+doi = {10.1145/3706598.3714223},
+abstract = {A classic problem in enterprise Wi-Fi is client-side misconfiguration, which enables credential theft via “Evil Twin” (ET) attacks. To mitigate this, we design, develop, and evaluate a new configurator, SeQR, which allows users to effortlessly and securely set up an enterprise Wi-Fi connection. Utilizing existing authenticated channels, SeQR fully automates the client-side enterprise Wi-Fi configuration process with a simple scan, leaving no room for misconfigurations. Specifically, SeQR thwarts ET by making it impossible for users to opt-out from the security-critical certificate validation. We evaluate the efficacy of SeQR on two fronts. First, we implement a prototype of SeQR in Android, and test its functionality and runtime performance. Next, we compare the usability of SeQR against two existing Wi-Fi configuration interfaces of Android in an in-person user study (n=41) with real devices. Our evaluation shows that SeQR achieves noticeable usability improvements over existing designs, and prevents users from misconfiguring.},
+booktitle = {Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems (SIGCHI)},
+articleno = {127},
+numpages = {19},
+keywords = {WPA Enterprise, Evil-Twin, TLS, Android UI},
+location = {
+},
+series = {CHI '25}, 
+areas = {Usable Security, Wireless Networks, Mobile Security}
+}
+
+@inproceedings{Proteus,
+author = {Rashid, Syed Md Mukit and Wu, Tianwei and Tu, Kai and Ishtiaq, Abdullah Al and Tanvir, Ridwanul Hasan and Dong, Yilu and Chowdhury, Omar and Hussain, Syed Rafiul},
+title = {State Machine Mutation-based Testing Framework for Wireless Communication Protocols},
+year = {2024},
+nolinknolinkurl  = {https://doi.org/10.1145/3658644.3690312},
+doi = {10.1145/3658644.3690312},
+booktitle = {Proceedings of the 2024 on ACM SIGSAC Conference on Computer and Communications Security (ACM CCS)},
+numpages = {15},
+keywords = {4g lte, bluetooth, finite state machine, property guided testing}, 
+areas = {Protocol Testing, Mutation Testing, Wireless Networks, Dynamic Programming}
+}
+
+@inproceedings{CRV,
+title={CRV: Automated Cyber-Resiliency Reasoning for System Design Models},
+author={Larraz, Daniel and Lorch, Robert and Yahyazadeh, Moosa and Arif, M Fareed and Chowdhury, Omar and Tinelli, Cesare},
+booktitle={CONFERENCE ON FORMAL METHODS IN COMPUTER-AIDED DESIGN (FMCAD)},
+pages={209},
+year={2023},
+areas={Cyber-Resiliency, Model Checking, System Design, Formal Methods}
+}
+
+@INPROCEEDINGS{VETIOT,
+  author={Nafis, Akib Jawad and Chowdhury, Omar and Hoque, Endadul},
+  booktitle={2023 IEEE Conference on Communications and Network Security (CNS)}, 
+  title={VetIoT: On Vetting IoT Defenses Enforcing Policies at Runtime}, 
+  year={2023},
+  pages={1-9},
+  doi={10.1109/CNS59707.2023.10288667}, 
+  areas={IoT Security, Policy Enforcement, Runtime Verification}
+}
+
+@INPROCEEDINGS {ARMOR,
+author = { Debnath, Joyanta and Jenkins, Christa and Sun, Yuteng and Chau, Sze Yiu and Chowdhury, Omar },
+booktitle = { 2024 IEEE Symposium on Security and Privacy (SP) },
+title = {ARMOR: A Formally Verified Implementation of X.509 Certificate Chain Validation},
+year = {2024},
+volume = {},
+ISSN = {},
+pages = {1462-1480},
+doi = {10.1109/SP54263.2024.00220},
+nolinknolinkurl  = {https://doi.ieeecomputersociety.org/10.1109/SP54263.2024.00220},
+month =May, 
+areas = {X.509 PKI, Certificate Validation, Formal Verification, Software Testing, Machine-checked Proofs}
+}
+
+@inproceedings{Uptane,
+author = {Lorch, Robert and Larraz, Daniel and Tinelli, Cesare and Chowdhury, Omar},
+title = {A Comprehensive, Automated Security Analysis of the Uptane Automotive Over-the-Air Update Framework},
+year = {2024},
+nolinknolinkurl  = {https://doi.org/10.1145/3678890.3678927},
+doi = {10.1145/3678890.3678927},
+booktitle = {Proceedings of the 27th International Symposium on Research in Attacks, Intrusions and Defenses (RAID)},
+numpages = {19},
+areas = {Attacks, Automotive security, Model checking, Protocol analysis, Design vulnerabilities}
+}
+
+%%%%% JOURNAL START %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+@article{VERDICT2,
+  author    = {Baoluo Meng and
+               Daniel Larraz and
+               Kit Siu and
+               Abha Moitra and
+               John Interrante and
+               William Smith and
+               Saswata Paul and
+               Daniel Prince and
+               Heber Herencia{-}Zapana and
+               M. Fareed Arif and
+               Moosa Yahyazadeh and
+               Vidhya Tekken Valapil and
+               Michael Dnolinkurl ing and
+               Cesare Tinelli and
+               Omar Chowdhury},
+  title     = {VERDICT: A Language and Framework for Engineering Cyber Resilient
+               and Safe System},
+  journal   = {Systems MDPI},
+  volume    = {9},
+  number    = {1},
+  pages     = {18},
+  year      = {2021},
+  nolinkurl        = {https://doi.org/10.3390/systems9010018},
+  doi       = {10.3390/systems9010018},
+  timestamp = {Thu, 29 Apr 2021 15:12:15 +0200},
+  bibnolinkurl     = {https://dblp.org/rec/journals/systems/MengLSMISPPHAYV21.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org},
+   options   = {contrib=\equalc}, 
+   areas   = {Cyber Resiliency, System Design, Formal Methods, Model Checking, SMT Solvers}
+}
+
+@article{ATFUZZERJOURNAL,
+author = {Karim, Imtiaz and Cicala, Fabrizio and Hussain, Syed Rafiul and Chowdhury, Omar and Bertino, Elisa},
+title = {ATFuzzer: Dynamic Analysis Framework of AT Interface for Android Smartphones},
+year = {2020},
+volume = {1},
+number = {4},
+nolinknolinkurl  = {https://doi.org/10.1145/3416125},
+doi = {10.1145/3416125},
+journal = {Digital Threats: Research and Practice},
+month = dec,
+articleno = {23},
+numpages = {29},
+options   = {contrib=\equalc}, 
+areas = {Android Security, Fuzzing, Dynamic Analysis, Mobile Security, Grammar-based Fuzzing}
+}
+
+%%%%% JOURNAL END %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%% EDITED VOLUMES %%%%%%%%%%%%%%%%%%%%%%%%%%%
+@proceedings{SACMAT2021,
+  editor    = {Jorge Lobo and
+               Roberto Di Pietro and
+               Omar Chowdhury and
+               Hongxin Hu},
+  title     = {SACMAT '21: The 26th ACM Symposium on Access Control Models and
+               Technologies, Virtual Event, Spain, June 16-18, 2021},
+  year      = {2021},
+  nolinkurl        = {https://doi.org/10.1145/3450569},
+  doi       = {10.1145/3450569},
+  timestamp = {Tue, 06 Jul 2021 18:09:51 +0200},
+  bibnolinkurl     = {https://dblp.org/rec/conf/sacmat/2021.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@proceedings{SACMAT2022,
+  editor    = {Sven Dietrich and
+               Omar Chowdhury and
+               Daniel Takabi},
+  title     = {SACMAT '22: The 27th ACM Symposium on Access Control Models and
+               Technologies, New York, NY, USA, June 8 - 10, 2022},
+  year      = {2022},
+  nolinkurl        = {https://doi.org/10.1145/3532105},
+  doi       = {10.1145/3532105},
+  timestamp = {Mon, 13 Jun 2022 16:29:51 +0200},
+  bibnolinkurl     = {https://dblp.org/rec/conf/sacmat/2022.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%% CONFERENCE START %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+@inproceedings{MAVERICK,
+author = {Mazhar, M. Hammad and Li, Li and Hoque, Endadul and Chowdhury, Omar},
+title = {Maverick: An App-independent and Platform-agnostic Approach to Enforce Policies in IoT Systems at Runtime},
+year = {2023},
+nolinknolinkurl  = {https://doi.org/10.1145/3558482.3590188},
+doi = {10.1145/3558482.3590188},
+booktitle = {Proceedings of the 16th ACM Conference on Security and Privacy in Wireless and Mobile Networks (ACM WiSec)},
+numpages = {12},
+areas = {Iot systems, Policy analysis, Policy enforcement}
+}
+
+@inproceedings{PHOENIXMEASUREIMC,
+  author    = {Mitziu Echeverria and
+               Omar Chowdhury},
+  editor    = {Chadi Barakat and
+               Cristel Pelsser and
+               Theophilus A. Benson and
+               David R. Choffnes},
+  title     = {Demystifying the presence of cellular network attacks and misbehaviors},
+  booktitle = {Proceedings of the 22nd ACM Internet Measurement Conference, IMC 2022, Nice, France, October 25-27, 2022},
+  pages     = {742--743},
+  year      = {2022},
+  nolinkurl        = {https://doi.org/10.1145/3517745.3563017},
+  doi       = {10.1145/3517745.3563017},
+  timestamp = {Mon, 06 Feb 2023 21:45:20 +0100},
+  bibnolinkurl     = {https://dblp.org/rec/conf/imc/EcheverriaC22.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org},
+  note  =    {(Poster)},
+keywords  = {nonref, abstract}
+}
+
+@inproceedings{LTEInspector,
+  author    = {Syed Rafiul Hussain and
+               Omar Chowdhury and
+               Shagufta Mehnaz and
+               Elisa Bertino},
+  title     = {LTEInspector: A Systematic Approach for Adversarial Testing of 4G
+               LTE},
+  booktitle = {25th Annual Network and Distributed System Security Symposium, NDSS
+               2018, San Diego, California, USA, February 18-21, 2018},
+  year      = {2018},
+  nolinkurl        = {http://wp.internetsociety.org/ndss/wp-content/uploads/sites/25/2018/02/ndss2018\_02A-3\_Hussain\_paper.pdf},
+  timestamp = {Thu, 17 Jun 2021 16:04:48 +0200},
+  bibnolinkurl     = {https://dblp.org/rec/conf/ndss/HussainCMB18.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org},
+  options   = {contrib=\majorc}, 
+  areas={Adversarial Testing, Cellular Network Security, Protocol Analysis, Model Checking}
+}
+
+@inproceedings{JOHNNY,
+author = {Chau, Sze Yiu and Wang, Bincheng and Wang, Jianxiong and Chowdhury, Omar and Kate, Aniket and Li, Ninghui},
+title = {Why Johnny Can't Make Money With His Contents: Pitfalls of Designing and Implementing Content Delivery Apps},
+year = {2018},
+nolinknolinkurl  = {https://doi.org/10.1145/2976749.2974752},
+doi = {10.1145/2976749.2974752},
+booktitle = {Proceedings of the 34th Annual Computer Security Applications Conference (ACSAC)},
+numpages = {16},
+options   = {contrib=\majorc}, 
+areas = {Digital Rights Management, Mobile Security, Android Security, Protocol Analysis}
+}
+
+@inproceedings{DIKEUE,
+  author    = {Syed Rafiul Hussain and Imtiaz Karim and Abdullah Al Ishtiaq and Omar Chowdhury and Elisa Bertino},
+  title     = {Noncompliance as Deviant Behavior: An Automated Black-box Noncompliance Checker for 4G LTE Cellular Devices},
+  booktitle = {28th ACM Conference on Computer and Communications Security (ACM CCS),
+               2021, virtually, November 15-19, 2021},
+  year      = {2021},
+   options   = {contrib=\majorc}, 
+   areas   = {Cellular Network Security, Protocol Analysis, Model Checking, Adversarial Testing, Automata Learning, Predicate Abstraction},
+}
+
+@inproceedings{MORPHEUS,
+  author    = {Moosa Yahyazadeh  and Sze Yiu Chau  and Li Li  and Man Hong Hue and Joyanta Debnath and Sheung Chiu Ip and Li Chun Ngai  and Endadul Hoque and Omar Chowdhury},
+  title     = {Morpheus: Bringing The (PKCS) One To Meet the Oracle},
+  booktitle = {28th ACM Conference on Computer and Communications Security (ACM CCS),
+               2021, virtually, November 15-19, 2021},
+  year      = {2021},
+   options   = {contrib=\majorc}, 
+   areas   = {SSL/TLS, PKCS#11, Adversarial Testing, Adaptive Testing},
+}
+
+@inproceedings{CERES,
+  author    = {Joyanta Debnath  and Sze Yiu Chau and Omar Chowdhury},
+  title     = {On Reengineering the X.509 PKI with Executable Specification for Better Implementation Guarantees},
+  booktitle = {28th ACM Conference on Computer and Communications Security (ACM CCS),
+               2021, virtually, November 15-19, 2021},
+  year      = {2021},
+   options   = {contrib=\majorc},
+   areas    = {SSL/TLS, X.509 PKI, Executable Specification, SMT},
+   award = {Distinguished Paper Award (Runner-up)}
+}
+
+@inproceedings{wificcs,
+  author    = {Man Hong Hue and Joyanta Debnath  and Kin Man Leung and Li Li and Mohsen Minaei and M. Hammad Mazhar  and Kailiang Xian and Endadul Hoque and Omar Chowdhury and Sze Yiu Chau},
+  title     = {All your credentials are belong to us: On Insecure WPA2-Enterprise Configurations},
+  booktitle = {28th ACM Conference on Computer and Communications Security (ACM CCS),
+               2021, virtually, November 15-19, 2021},
+  year      = {2021},
+   options   = {contrib=\majorc}, 
+   areas  = {Wireless Networks, Wi-Fi Security, WPA2-Enterprise, Usable Security, Android Security},
+}
+
+@inproceedings{PHEONIX,
+  author    = {Mitziu Echeverria and
+               Zeeshan Ahmed and
+               Bincheng Wang and
+               M. Fareed Arif and
+               Syed Rafiul Hussain and
+               Omar Chowdhury},
+  title     = {PHOENIX: Device-Centric Cellular Network Protocol Monitoring using
+               Runtime Verification},
+  booktitle = {28th Annual Network and Distributed System Security Symposium, NDSS
+               2021, virtually, February 21-25, 2021},
+  year      = {2021},
+  nolinkurl        = {https://www.ndss-symposium.org/ndss-paper/phoenix-device-centric-cellular-network-protocol-monitoring-using-runtime-verification/},
+  timestamp = {Thu, 17 Jun 2021 16:04:48 +0200},
+  bibnolinkurl     = {https://dblp.org/rec/conf/ndss/EcheverriaAWAHC21.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}, 
+   options   = {contrib=\majorc}, 
+   areas  = {Cellular Network Security, Protocol Analysis, Runtime Verification, Automata Learning}
+}
+
+@article{PAGINGSECURITY,
+  author    = {Ankush Singla and
+               Syed Rafiul Hussain and
+               Omar Chowdhury and
+               Elisa Bertino and
+               Ninghui Li},
+  title     = {Protecting the 4G and 5G Cellular Paging Protocols against Security
+               and Privacy Attacks},
+  journal   = {Proceedings of Privacy Enhancing Technologies (PETS)},
+  volume    = {2020},
+  number    = {1},
+  pages     = {126--142},
+  year      = {2020},
+  nolinkurl        = {https://doi.org/10.2478/popets-2020-0008},
+  doi       = {10.2478/popets-2020-0008},
+  timestamp = {Wed, 30 Sep 2020 16:54:04 +0200},
+  bibnolinkurl     = {https://dblp.org/rec/journals/popets/SinglaHCBL20.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org},
+   options   = {contrib=\majorc},
+   areas  = {Cellular Network Security, Protocol Analysis, Privacy, Adversarial Testing}
+}
+
+@inproceedings{TLSMEASUREMENT1,
+  author    = {Joyanta Debnath and
+               Sze Yiu Chau and
+               Omar Chowdhury},
+  editor    = {Mauro Conti and
+               Jianying Zhou and
+               Emiliano Casalicchio and
+               Angelo Spognardi},
+  title     = {When TLS Meets Proxy on Mobile},
+  booktitle = {18th International Conference on Applied Cryptography and Network Security 
+               ACNS 2020, Rome, Italy, October 19-22, 2020, Proceedings, Part {II}},
+  pages     = {387--407},
+  year      = {2020},
+  nolinkurl        = {https://doi.org/10.1007/978-3-030-57878-7\_19},
+  doi       = {10.1007/978-3-030-57878-7\_19},
+  timestamp = {Tue, 29 Dec 2020 18:35:05 +0100},
+  bibnolinkurl     = {https://dblp.org/rec/conf/acns/DebnathCC20.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}, 
+   options   = {contrib=\majorc},
+   areas  = {TLS, Mobile Security, SSL/TLS Proxies, Measurement Studies},
+   award = {Best Paper Award}, 
+}
+
+@inproceedings{SYSLITE,
+  author    = {M. Fareed Arif and
+               Daniel Larraz and
+               Mitziu Echeverria and
+               Andrew Reynolds and
+               Omar Chowdhury and
+               Cesare Tinelli},
+  title     = {SYSLITE: Syntax-Guided Synthesis of PLTL Formulas from Finite
+               Traces},
+  booktitle = {2020 Formal Methods in Computer Aided Design, FMCAD 2020, Haifa,
+               Israel, September 21-24, 2020},
+  pages     = {93--103},
+  year      = {2020},
+  nolinkurl        = {https://doi.org/10.34727/2020/isbn.978-3-85448-042-6\_16},
+  doi       = {10.34727/2020/isbn.978-3-85448-042-6\_16},
+  timestamp = {Tue, 27 Jul 2021 08:54:13 +0200},
+  bibnolinkurl     = {https://dblp.org/rec/conf/fmcad/ArifLERCT20.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}, 
+   options   = {contrib=\secondc}, 
+    areas  = {Syntax-guided Synthesis, Temporal Logic, SMT, Formal Methods}
+}
+
+@inproceedings{PATRIOT,
+  author    = {Moosa Yahyazadeh and
+               Syed Rafiul Hussain and
+               Md. Endadul Hoque and
+               Omar Chowdhury},
+  editor    = {Jyotirmoy Deshmukh and
+               Dejan Nickovic},
+  title     = {PatrIoT: Policy Assisted Resilient Programmable IoT System},
+  booktitle = {Runtime Verification - 20th International Conference, RV 2020, Los
+               Angeles, CA, USA, October 6-9, 2020, Proceedings},
+  pages     = {151--171},
+  year      = {2020},
+  nolinkurl        = {https://doi.org/10.1007/978-3-030-60508-7\_8},
+  doi       = {10.1007/978-3-030-60508-7\_8},
+  timestamp = {Fri, 09 Oct 2020 16:55:45 +0200},
+  bibnolinkurl     = {https://dblp.org/rec/conf/rv/YahyazadehHHC20.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}, 
+   options   = {contrib=\majorc},
+   areas  = {IoT Security, Policy Enforcement, Runtime Verification}
+}
+
+@ARTICLE{TAINTCRYPT,
+  author={Rahaman, Sazzadur and Cai, Haipeng and Chowdhury, Omar Haider and Yao, Danfeng Daphne},
+  journal={IEEE Transactions on Dependable and Secure Computing (IEEE TDSC)}, 
+  title={From Theory to Code: Identifying Logical Flaws in Cryptographic Implementations in C/C++}, 
+  year={2021},
+  volume={},
+  number={},
+  pages={1-1},
+  doi={10.1109/TDSC.2021.3108031}, 
+  options   = {contrib=\equalc}, 
+  areas={Cryptographic Implementations, Software Testing, C/C++ Security, Taint Analysis}
+  }
+
+@inproceedings{ATFUZZER,
+  author    = {Imtiaz Karim and
+               Fabrizio Cicala and
+               Syed Rafiul Hussain and
+               Omar Chowdhury and
+               Elisa Bertino},
+  editor    = {David Balenson},
+  title     = {Opening Pandora's box through ATFuzzer: dynamic analysis of AT interface
+               for Android smartphones},
+  booktitle = {Proceedings of the 35th Annual Computer Security Applications Conference,
+               ACSAC 2019, San Juan, PR, USA, December 09-13, 2019},
+  pages     = {529--543},
+  year      = {2019},
+  nolinkurl        = {https://doi.org/10.1145/3359789.3359833},
+  doi       = {10.1145/3359789.3359833},
+  timestamp = {Tue, 26 Nov 2019 09:57:54 +0100},
+  bibnolinkurl     = {https://dblp.org/rec/conf/acsac/KarimCHCB19.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org},
+   options   = {contrib=\secondc},
+   award = {Best Paper Award}, 
+   areas = {Android Security, Fuzzing, Dynamic Analysis, Mobile Security, Grammar-based Fuzzing}
+}
+
+@inproceedings{5GREASONER,
+  author    = {Syed Rafiul Hussain and
+               Mitziu Echeverria and
+               Imtiaz Karim and
+               Omar Chowdhury and
+               Elisa Bertino},
+  editor    = {Lorenzo Cavallaro and
+               Johannes Kinder and
+               XiaoFeng Wang and
+               Jonathan Katz},
+  title     = {5GReasoner: A Property-Directed Security and Privacy Analysis Framework
+               for 5G Cellular Network Protocol},
+  booktitle = {Proceedings of the 2019 ACM SIGSAC Conference on Computer and
+               Communications Security, ACM CCS 2019, London, UK, November 11-15, 2019},
+  pages     = {669--684},
+  year      = {2019},
+  nolinkurl        = {https://doi.org/10.1145/3319535.3354263},
+  doi       = {10.1145/3319535.3354263},
+  timestamp = {Tue, 10 Nov 2020 20:00:36 +0100},
+  bibnolinkurl     = {https://dblp.org/rec/conf/ccs/HussainEKCB19.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org},
+   options   = {contrib=\majorc}, 
+   areas  = {Cellular Network Security, Protocol Analysis, Model Checking, Adversarial Testing, Predicate Abstraction, Compositional verification}
+}
+
+@inproceedings{PKCSNDSS,
+  author    = {Sze Yiu Chau and
+               Moosa Yahyazadeh and
+               Omar Chowdhury and
+               Aniket Kate and
+               Ninghui Li},
+  title     = {Analyzing Semantic Correctness with Symbolic Execution: A Case Study
+               on PKCS{\#}1 v1.5 Signature Verification},
+  booktitle = {26th Annual Network and Distributed System Security Symposium, NDSS
+               2019, San Diego, California, USA, February 24-27, 2019},
+  year      = {2019},
+  nolinkurl        = {https://www.ndss-symposium.org/ndss-paper/analyzing-semantic-correctness-with-symbolic-execution-a-case-study-on-pkcs1-v1-5-signature-verification/},
+  timestamp = {Mon, 01 Feb 2021 08:43:04 +0100},
+  bibnolinkurl     = {https://dblp.org/rec/conf/ndss/ChauYCKL19.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}, 
+   options   = {contrib=\majorc}, 
+    areas  = {Cryptographic Implementations, Symbolic Execution, Software Testing, PKCS#1, SSL/TLS}
+}
+
+@inproceedings{TORPEDO,
+  author    = {Syed Rafiul Hussain and
+               Mitziu Echeverria and
+               Omar Chowdhury and
+               Ninghui Li and
+               Elisa Bertino},
+  title     = {Privacy Attacks to the 4G and 5G Cellular Paging Protocols Using Side
+               Channel Information},
+  booktitle = {26th Annual Network and Distributed System Security Symposium, NDSS
+               2019, San Diego, California, USA, February 24-27, 2019},
+  year      = {2019},
+  nolinkurl        = {https://www.ndss-symposium.org/ndss-paper/privacy-attacks-to-the-4g-and-5g-cellular-paging-protocols-using-side-channel-information/},
+  timestamp = {Mon, 01 Feb 2021 08:42:22 +0100},
+  bibnolinkurl     = {https://dblp.org/rec/conf/ndss/HussainECLB19.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org},
+   options   = {contrib=\majorc},
+    areas  = {Cellular Network Security, Protocol Analysis, Privacy, Adversarial Testing}, 
+    award = {Distinguished Paper Award (Runner-up)}, 
+}
+
+@inproceedings{EXPAT,
+  author    = {Moosa Yahyazadeh and
+               Proyash Podder and
+               Md. Endadul Hoque and
+               Omar Chowdhury},
+  editor    = {Florian Kerschbaum and
+               Atefeh Mashatan and
+               Jianwei Niu and
+               Adam J. Lee},
+  title     = {Expat: Expectation-based Policy Analysis and Enforcement for Appified
+               Smart-Home Platforms},
+  booktitle = {Proceedings of the 24th ACM Symposium on Access Control Models and
+               Technologies, ACM SACMAT 2019, Toronto, ON, Canada, June 03-06, 2019},
+  pages     = {61--72},
+  year      = {2019},
+  nolinkurl        = {https://doi.org/10.1145/3322431.3325107},
+  doi       = {10.1145/3322431.3325107},
+  timestamp = {Sun, 02 Jun 2019 13:58:07 +0200},
+  bibnolinkurl     = {https://dblp.org/rec/conf/sacmat/YahyazadehPHC19.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}, 
+   options   = {contrib=\majorc}, 
+   areas  = {IoT Security, Policy Enforcement, Access Control, Smart Home Security, SMT}
+}
+
+@inproceedings{LTEPKI,
+  author    = {Syed Rafiul Hussain and
+               Mitziu Echeverria and
+               Ankush Singla and
+               Omar Chowdhury and
+               Elisa Bertino},
+  title     = {Insecure Connection Bootstrapping in Cellular Networks: The Root of
+               All Evil},
+  booktitle = {Proceedings of the 12th Conference on Security and Privacy in Wireless
+               and Mobile Networks, ACM WiSec 2019, Miami, Florida, USA, May 15-17, 2019},
+  pages     = {1--11},
+  year      = {2019},
+  nolinkurl        = {https://doi.org/10.1145/3317549.3323402},
+  doi       = {10.1145/3317549.3323402},
+  timestamp = {Tue, 21 May 2019 10:55:29 +0200},
+  bibnolinkurl     = {https://dblp.org/rec/conf/wisec/HussainESCB19.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}, 
+   options   = {contrib=\majorc}, 
+    areas  = {Cellular Network Security, Protocol Analysis, PKI}
+}
+
+@INPROCEEDINGS{VERDICTDASC,
+  author={Siu, Kit and Moitra, Abha and Li, Meng and Dnolinkurl ing, Michael and Herencia-Zapana, Heber and Interrante, John and Meng, Baoluo and Tinelli, Cesare and Chowdhury, Omar and Larraz, Daniel and Yahyazadeh, Moosa and Arif, M. Fareed and Prince, Daniel},
+  booktitle={2019 IEEE/AIAA 38th Digital Avionics Systems Conference (DASC)}, 
+  title={Architectural and Behavioral Analysis for Cyber Security}, 
+  year={2019},
+  volume={},
+  number={},
+  pages={1-10},
+  doi={10.1109/DASC43569.2019.9081652},
+   options   = {contrib=\secondc},
+  areas={Cyber Resiliency, System Design, Formal Methods, Model Checking, SMT Solvers}, 
+  award = {Best Paper Award (Cybersecurity and Software Track)}, 
+  }
+
+@inproceedings{SACMATKEYNOTE,
+  author    = {Omar Chowdhury},
+  editor    = {Elisa Bertino and
+               Dan Lin and
+               Jorge Lobo},
+  title     = {How Inadequate Specification, Buggy Implementation, and Deficient
+               Platform-Support Hinder Security},
+  booktitle = {Proceedings of the 23nd ACM on Symposium on Access Control Models
+               and Technologies, ACM SACMAT 2018, Indianapolis, IN, USA, June 13-15,
+               2018},
+  pages     = {221},
+  year      = {2018},
+  nolinkurl        = {https://doi.org/10.1145/3205977.3206002},
+  doi       = {10.1145/3205977.3206002},
+  timestamp = {Wed, 21 Nov 2018 12:44:16 +0100},
+  bibnolinkurl     = {https://dblp.org/rec/conf/sacmat/Chowdhury18.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org},
+   options   = {contrib=\majorc}, 
+   note  =    {\sf (Invited submission)},
+   keywords  = {nonref, abstract}, 
+   areas  = {Access Control, Security Specification, Software Vulnerabilities, Platform Security}
+}
+
+@inproceedings{CASHEW,
+  author    = {Sze Yiu Chau and
+               Omar Chowdhury and
+               Victor E. Gonsalves and
+               Huangyi Ge and
+               Weining Yang and
+               Sonia Fahmy and
+               Ninghui Li},
+  editor    = {Raheem Beyah and
+               Bing Chang and
+               Yingjiu Li and
+               Sencun Zhu},
+  title     = {{Adaptive Deterrence of {DNS} Cache Poisoning}},
+  booktitle = {Security and Privacy in Communication Networks - 14th International
+               Conference,  SecureComm 2018, Singapore, August 8-10, 2018, Proceedings,
+               Part {II}},
+  pages     = {171--191},
+  year      = {2018},
+  nolinkurl        = {https://doi.org/10.1007/978-3-030-01704-0\_10},
+  doi       = {10.1007/978-3-030-01704-0\_10},
+  timestamp = {Wed, 19 May 2021 08:31:44 +0200},
+  bibnolinkurl     = {https://dblp.org/rec/conf/securecomm/ChauCGGYFL18.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org},
+   options   = {contrib=\majorc},
+    areas  = {DNS Security, Cache Poisoning, Deterrence, Adaptive Security, Network Security}
+}
+
+@inproceedings{CHIRON,
+  author    = {Md. Endadul Hoque and
+               Omar Chowdhury and
+               Sze Yiu Chau and
+               Cristina Nita{-}Rotaru and
+               Ninghui Li},
+  title     = {{Analyzing Operational Behavior of Stateful Protocol Implementations
+               for Detecting Semantic Bugs}},
+  booktitle = {47th Annual {IEEE/IFIP} International Conference on Dependable Systems
+               and Networks, DSN 2017, Denver, CO, USA, June 26-29, 2017},
+  pages     = {627--638},
+  publisher = {{IEEE} Computer Society},
+  year      = {2017},
+  nolinkurl        = {https://doi.org/10.1109/DSN.2017.36},
+  doi       = {10.1109/DSN.2017.36},
+  timestamp = {Sun, 25 Oct 2020 22:57:31 +0100},
+  bibnolinkurl     = {https://dblp.org/rec/conf/dsn/HoqueCCNL17.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org},
+   options   = {contrib=\majorc}, 
+    areas  = {Protocol Analysis, Stateful Protocols, Semantic Bugs, Model Checking, Symbolic Execution}
+}
+
+@inproceedings{SYMCERTS,
+  author    = {Sze Yiu Chau and
+               Omar Chowdhury and
+               Md. Endadul Hoque and
+               Huangyi Ge and
+               Aniket Kate and
+               Cristina Nita{-}Rotaru and
+               Ninghui Li},
+  title     = {{SymCerts: Practical Symbolic Execution for Exposing Noncompliance
+               in {X.509} Certificate Validation Implementations}},
+  booktitle = {2017 {IEEE} Symposium on Security and Privacy, {IEEE S&P} 2017, San Jose,
+               CA, USA, May 22-26, 2017},
+  pages     = {503--520},
+  publisher = {{IEEE} Computer Society},
+  year      = {2017},
+  nolinkurl        = {https://doi.org/10.1109/SP.2017.40},
+  doi       = {10.1109/SP.2017.40},
+  timestamp = {Sun, 25 Oct 2020 22:57:10 +0100},
+  bibnolinkurl     = {https://dblp.org/rec/conf/sp/ChauCHGKNL17.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org},
+   options   = {contrib=\majorc}, 
+    areas  = {Cryptographic Implementations, Symbolic Execution, Software Testing, X.509 Certificate Validation, SSL/TLS}, 
+    award = {CSAW 2017 North America Finalist, Applied Research Competition}, 
+}
+
+@inproceedings{VISUALCRYPTO,
+  author    = {Tianhao Wang and
+               Huangyi Ge and
+               Omar Chowdhury and
+               Hemanta K. Maji and
+               Ninghui Li},
+  editor    = {Edgar R. Weippl and
+               Stefan Katzenbeisser and
+               Christopher Kruegel and
+               Andrew C. Myers and
+               Shai Halevi},
+  title     = {{On the Security and Usability of Segment-based Visual Cryptographic
+               Authentication Protocols}},
+  booktitle = {Proceedings of the 2016 {ACM} {SIGSAC} Conference on Computer and
+               Communications Security ({ACM CCS}), Vienna, Austria, October 24-28, 2016},
+  pages     = {603--615},
+  publisher = {{ACM}},
+  year      = {2016},
+  nolinkurl        = {https://doi.org/10.1145/2976749.2978417},
+  doi       = {10.1145/2976749.2978417},
+  timestamp = {Tue, 10 Nov 2020 20:00:49 +0100},
+  bibnolinkurl     = {https://dblp.org/rec/conf/ccs/WangGCML16.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org},
+   options   = {contrib=\secondc}, 
+    areas  = {Authentication Protocols, Visual Cryptography, Usable Security, Protocol Analysis}
+}
+
+@inproceedings{PASSWORD,
+  author    = {Weining Yang and
+               Ninghui Li and
+               Omar Chowdhury and
+               Aiping Xiong and
+               Robert W. Proctor},
+  editor    = {Edgar R. Weippl and
+               Stefan Katzenbeisser and
+               Christopher Kruegel and
+               Andrew C. Myers and
+               Shai Halevi},
+  title     = {{An Empirical Study of Mnemonic Sentence-based Password Generation
+               Strategies}},
+  booktitle = {Proceedings of the 2016 {ACM} {SIGSAC} Conference on Computer and
+               Communications Security ({ACM CCS}), Vienna, Austria, October 24-28, 2016},
+  pages     = {1216--1229},
+  publisher = {{ACM}},
+  year      = {2016},
+  nolinkurl        = {https://doi.org/10.1145/2976749.2978346},
+  doi       = {10.1145/2976749.2978346},
+  timestamp = {Tue, 10 Nov 2020 20:00:49 +0100},
+  bibnolinkurl     = {https://dblp.org/rec/conf/ccs/YangLCXP16.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org},
+   options   = {contrib=\minorc},
+    areas  = {Password Security, Usable Security, Authentication, User Studies}
+}
+
+@inproceedings{FIREWALL,
+  author    = {Haining Chen and
+               Omar Chowdhury and
+               Ninghui Li and
+               Warut Khern{-}am{-}nuai and
+               Suresh Chari and
+               Ian M. Molloy and
+               Youngja Park},
+  editor    = {X. Sean Wang and
+               Lujo Bauer and
+               Florian Kerschbaum},
+  title     = {{Tri-Modularization of Firewall Policies}},
+  booktitle = {Proceedings of the 21st {ACM} on Symposium on Access Control Models
+               and Technologies, {ACM SACMAT} 2016, Shanghai, China, June 5-8, 2016},
+  pages     = {37--48},
+  publisher = {{ACM}},
+  year      = {2016},
+  nolinkurl        = {https://doi.org/10.1145/2914642.2914646},
+  doi       = {10.1145/2914642.2914646},
+  timestamp = {Wed, 02 Jun 2021 09:13:31 +0200},
+  bibnolinkurl     = {https://dblp.org/rec/conf/sacmat/ChenCLKCMP16.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org},
+   options   = {contrib=\majorc}, 
+   areas  = {Firewall Policy Analysis, Access Control, Security Specification}
+}
+
+@inproceedings{EUNOMIA,
+  author    = {Omar Chowdhury and
+               Deepak Garg and
+               Limin Jia and
+               Anupam Datta},
+  editor    = {Indrajit Ray and
+               Ninghui Li and
+               Christopher Kruegel},
+  title     = {{Equivalence-based Security for Querying Encrypted Databases: Theory
+               and Application to Privacy Policy Audits}},
+  booktitle = {Proceedings of the 22nd {ACM} {SIGSAC} Conference on Computer and
+               Communications Security ({ACM CCS}), Denver, CO, USA, October 12-16, 2015},
+  pages     = {1130--1143},
+  publisher = {{ACM}},
+  year      = {2015},
+  nolinkurl        = {https://doi.org/10.1145/2810103.2813638},
+  doi       = {10.1145/2810103.2813638},
+  timestamp = {Tue, 10 Nov 2020 19:58:09 +0100},
+  bibnolinkurl     = {https://dblp.org/rec/conf/ccs/Chowdhury0JD15.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org},
+   options   = {contrib=\majorc}, 
+    areas  = {Encrypted Databases, Privacy Policy Audits, Security Analysis, Cryptography}
+}
+
+@inproceedings{FIREWALLHOTSOS,
+  author    = {Haining Chen and
+               Omar Chowdhury and
+               Jing Chen and
+               Ninghui Li and
+               Robert W. Proctor},
+  editor    = {David M. Nicol},
+  title     = {{Towards Quantification of Firewall Policy Complexity}},
+  booktitle = {Proceedings of the 2015 Symposium and Bootcamp on the Science of Security,
+               {HotSoS} 2015, Urbana, IL, USA, April 21-22, 2015},
+  pages     = {18:1--18:2},
+  publisher = {{ACM}},
+  year      = {2015},
+  nolinkurl        = {https://doi.org/10.1145/2746194.2746212},
+  doi       = {10.1145/2746194.2746212},
+  timestamp = {Tue, 06 Nov 2018 16:57:27 +0100},
+  bibnolinkurl     = {https://dblp.org/rec/conf/hotsos/ChenCCLP15.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org},
+   options   = {contrib=\majorc}, 
+   areas  = {Firewall Policy Analysis, Access Control, Security Specification}
+}
+
+
+@inproceedings{ARV,
+  author    = {Aaron Kane and
+               Omar Chowdhury and
+               Anupam Datta and
+               Philip Koopman},
+  editor    = {Ezio Bartocci and
+               Rupak Majumdar},
+  title     = {{A Case Study on Runtime Monitoring of an Autonomous Research Vehicle
+               {(ARV)} System}},
+  booktitle = {Runtime Verification - 6th International Conference, {RV} 2015 Vienna,
+               Austria, September 22-25, 2015. Proceedings},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {9333},
+  pages     = {102--117},
+  publisher = {Springer},
+  year      = {2015},
+  nolinkurl        = {https://doi.org/10.1007/978-3-319-23820-3\_7},
+  doi       = {10.1007/978-3-319-23820-3\_7},
+  timestamp = {Tue, 14 May 2019 10:00:51 +0200},
+  bibnolinkurl     = {https://dblp.org/rec/conf/rv/KaneCDK15.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org},
+   options   = {contrib=\majorc}, 
+    areas  = {Runtime Verification, Autonomous Systems, Case Studies}
+}
+
+@inproceedings{PRECIS,
+  author    = {Omar Chowdhury and
+               Limin Jia and
+               Deepak Garg and
+               Anupam Datta},
+  editor    = {Armin Biere and
+               Roderick Bloem},
+  title     = {{Temporal Mode-Checking for Runtime Monitoring of Privacy Policies}},
+  booktitle = {Computer Aided Verification - 26th International Conference, {CAV}
+               2014, Held as Part of the Vienna Summer of Logic, {VSL} 2014, Vienna,
+               Austria, July 18-22, 2014. Proceedings},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {8559},
+  pages     = {131--149},
+  publisher = {Springer},
+  year      = {2014},
+  nolinkurl        = {https://doi.org/10.1007/978-3-319-08867-9\_9},
+  doi       = {10.1007/978-3-319-08867-9\_9},
+  timestamp = {Sun, 16 Aug 2020 15:23:08 +0200},
+  bibnolinkurl     = {https://dblp.org/rec/conf/cav/ChowdhuryJGD14.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org},
+   options   = {contrib=\majorc}, 
+    areas  = {Runtime Monitoring, Privacy Policies, Temporal Logic, Model Checking}
+}
+
+@inproceedings{HIPAA-SACMAT,
+  author    = {Omar Chowdhury and
+               Andreas Gampe and
+               Jianwei Niu and
+               Jeffery von Ronne and
+               Jared Bennatt and
+               Anupam Datta and
+               Limin Jia and
+               William H. Winsborough},
+  editor    = {Mauro Conti and
+               Jaideep Vaidya and
+               Andreas Schaad},
+  title     = {{Privacy Promises That Can be Kept: A Policy Analysis Method with Application
+               to the HIPAA Privacy Rule}},
+  booktitle = {18th {ACM} Symposium on Access Control Models and Technologies, {ACM SACMAT}
+               '13, Amsterdam, The Netherlands, June 12-14, 2013},
+  pages     = {3--14},
+  publisher = {{ACM}},
+  year      = {2013},
+  nolinkurl        = {https://doi.org/10.1145/2462410.2462423},
+  doi       = {10.1145/2462410.2462423},
+  timestamp = {Sun, 16 Aug 2020 15:23:08 +0200},
+  bibnolinkurl     = {https://dblp.org/rec/conf/sacmat/ChowdhuryGNRBDJW13.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org},
+   options   = {contrib=\majorc}, 
+    areas  = {Privacy Policy Analysis, HIPAA Compliance, Policy Specification}
+
+}
+
+@inproceedings{ONLINEUSE,
+  author    = {Murillo Pontual and
+               Andreas Gampe and
+               Omar Chowdhury and
+               Bazoumana Kone and
+               Md. Shamim Ashik and
+               William H. Winsborough},
+  editor    = {Elisa Bertino and
+               Ravi S. Sandhu},
+  title     = {{The Privacy in the Time of the Internet: Secrecy vs Transparency}},
+  booktitle = {Second {ACM} Conference on Data and Application Security and Privacy,
+               {ACM CODASPY} 2012, San Antonio, TX, USA, February 7-9, 2012},
+  pages     = {133--140},
+  publisher = {{ACM}},
+  year      = {2012},
+  nolinkurl        = {https://doi.org/10.1145/2133601.2133618},
+  doi       = {10.1145/2133601.2133618},
+  timestamp = {Tue, 06 Nov 2018 11:07:47 +0100},
+  bibnolinkurl     = {https://dblp.org/rec/conf/codaspy/PontualGCKAW12.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}, 
+   options   = {contrib=\equalc},
+    areas  = {Privacy, Internet Security, Data Protection}
+
+}
+
+@inproceedings{CASCADING,
+  author    = {Omar Chowdhury and
+               Murillo Pontual and
+               William H. Winsborough and
+               Ting Yu and
+               Keith Irwin and
+               Jianwei Niu},
+  editor    = {Vijay Atluri and
+               Jaideep Vaidya and
+               Axel Kern and
+               Murat Kantarcioglu},
+  title     = {{Ensuring Authorization Privileges for Cascading User Obligations}},
+  booktitle = {17th {ACM} Symposium on Access Control Models and Technologies, {ACM SACMAT}
+               '12, Newark, NJ, {USA} - June 20 - 22, 2012},
+  pages     = {33--44},
+  publisher = {{ACM}},
+  year      = {2012},
+  nolinkurl        = {https://doi.org/10.1145/2295136.2295144},
+  doi       = {10.1145/2295136.2295144},
+  timestamp = {Tue, 06 Nov 2018 16:57:58 +0100},
+  bibnolinkurl     = {https://dblp.org/rec/conf/sacmat/ChowdhuryPWYIN12.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org},
+   options   = {contrib=\majorc}, 
+    areas  = {User Obligations, Access Control, Security Specification, Authorization, Policy Analysis}, 
+    award = {Best Paper Award}
+}
+
+@inproceedings{HIPAAXACML,
+  author    = {Omar Chowdhury and
+               Haining Chen and
+               Jianwei Niu and
+               Ninghui Li and
+               Elisa Bertino},
+  editor    = {Carl A. Gunter and
+               Zachary N. J. Peterson},
+  title     = {{On XACML's Adequacy to Specify and to Enforce HIPAA}},
+  booktitle = {3rd {USENIX} Workshop on Health Security and Privacy, {HealthSec'12},
+               Bellevue, WA, USA, August 6-7, 2012},
+  publisher = {{USENIX} Association},
+  year      = {2012},
+  nolinkurl        = {https://www.usenix.org/conference/healthsec12/workshop-program/presentation/chowdhury},
+  timestamp = {Mon, 01 Feb 2021 08:43:04 +0100},
+  bibnolinkurl     = {https://dblp.org/rec/conf/uss/ChowdhuryCNLB12.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}, 
+   options   = {contrib=\majorc},
+    areas  = {HIPAA Compliance, Policy Specification, Access Control, XACML}
+}
+
+@inproceedings{OBLIGATION3,
+  author    = {Murillo Pontual and
+               Omar Chowdhury and
+               William H. Winsborough and
+               Ting Yu and
+               Keith Irwin},
+  editor    = {Ruth Breu and
+               Jason Crampton and
+               Jorge Lobo},
+  title     = {{On the Management of User Obligations}},
+  booktitle = {16th {ACM} Symposium on Access Control Models and Technologies, {ACM SACMAT}
+               2011, Innsbruck, Austria, June 15-17, 2011, Proceedings},
+  pages     = {175--184},
+  publisher = {{ACM}},
+  year      = {2011},
+  nolinkurl        = {https://doi.org/10.1145/1998441.1998473},
+  doi       = {10.1145/1998441.1998473},
+  timestamp = {Tue, 06 Nov 2018 16:57:59 +0100},
+  bibnolinkurl     = {https://dblp.org/rec/conf/sacmat/PontualCWYI11.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org},
+   options   = {contrib=\majorc}, 
+    areas  = {User Obligations, Access Control, Security Specification, Authorization, Policy Analysis}
+}
+
+@inproceedings{OBLIGATION2,
+  author    = {Murillo Pontual and
+               Omar Chowdhury and
+               William H. Winsborough and
+               Ting Yu and
+               Keith Irwin},
+  editor    = {Dengguo Feng and
+               David A. Basin and
+               Peng Liu},
+  title     = {{Toward Practical Authorization-dependent User Obligation Systems}},
+  booktitle = {Proceedings of the 5th {ACM} Symposium on Information, Computer and
+               Communications Security, {ACM ASIACCS} 2010, Beijing, China, April 13-16,
+               2010},
+  pages     = {180--191},
+  publisher = {{ACM}},
+  year      = {2010},
+  nolinkurl        = {https://doi.org/10.1145/1755688.1755711},
+  doi       = {10.1145/1755688.1755711},
+  timestamp = {Tue, 10 Nov 2020 16:06:16 +0100},
+  bibnolinkurl     = {https://dblp.org/rec/conf/ccs/PontualCWYI10.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org},
+   options   = {contrib=\majorc}, 
+    areas  = {User Obligations, Access Control, Security Specification, Authorization, Policy Analysis}
+}
+
+@inproceedings{OBLIGATION1,
+  author    = {Murillo Pontual and
+               Keith Irwin and
+               Omar Chowdhury and
+               William H. Winsborough and
+               Ting Yu},
+  editor    = {Ahmed K. Elmagarmid and
+               Divyakant Agrawal},
+  title     = {{Failure Feedback for User Obligation Systems}},
+  booktitle = {Proceedings of the 2010 {IEEE} Second International Conference on
+               Social Computing, SocialCom / {IEEE} International Conference on Privacy,
+               Security, Risk and Trust, {IEEE PASSAT} 2010, Minneapolis, Minnesota, USA,
+               August 20-22, 2010},
+  pages     = {713--720},
+  publisher = {{IEEE} Computer Society},
+  year      = {2010},
+  nolinkurl        = {https://doi.org/10.1109/SocialCom.2010.111},
+  doi       = {10.1109/SocialCom.2010.111},
+  timestamp = {Wed, 16 Oct 2019 14:14:50 +0200},
+  bibnolinkurl     = {https://dblp.org/rec/conf/socialcom/PontualICWY10.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}, 
+   options   = {contrib=\majorc}, 
+    areas  = {User Obligations, Access Control, Security Specification, Authorization, Policy Analysis}
+}
+
+%%%%%%%%%%%%%%%%% CONFERENCE END %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%% OTHERS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+@article{PHOENIX-FULLVERSION,
+  author    = {Mitziu Echeverria and
+               Zeeshan Ahmed and
+               Bincheng Wang and
+               M. Fareed Arif and
+               Syed Rafiul Hussain and
+               Omar Chowdhury},
+  title     = {{PHOENIX: Device-Centric Cellular Network Protocol Monitoring using
+               Runtime Verification}},
+  journal   = {CoRR},
+  volume    = {abs/2101.00328},
+  year      = {2021},
+  nolinkurl        = {https://arxiv.org/abs/2101.00328},
+  archivePrefix = {arXiv},
+  eprint    = {2101.00328},
+  timestamp = {Thu, 21 Jan 2021 14:42:30 +0100},
+  bibnolinkurl     = {https://dblp.org/rec/journals/corr/abs-2101-00328.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}, 
+   options   = {contrib=\majorc},
+     keywords  = {electronic}, 
+   areas  = {Cellular Network Security, Protocol Analysis, Runtime Verification}  
+}
+
+@techreport{HIPAAFULL,
+author = {William H. Winsborough and Jeffery von Ronne and Omar Chowdhury and 
+Jianwei Niu and Md. Shamim Ashik},
+title ={{Towards Practical Privacy Policy Enforcement}},
+number ={CS-TR-2011-009}, 
+year = {2011},
+institution={The University of Texas at San Antonio}, 
+address = {San Antonio, Texas}, 
+pages = {13}, 
+note = {available at \nolinknolinkurl {http://venom.cs.utsa.edu/dmz/techrep/2011/CS-TR-2011-009.pdf}}, 
+ options   = {contrib=\majorc},
+ areas  = {Privacy Policy Enforcement, HIPAA Compliance, Access Control, Policy Analysis}
+}
+
+@techreport{PRECIS-TR,
+author = {Omar Chowdhury and Deepak Garg and Limin Jia and 
+Anupam Datta},
+title ={{Temporal Mode-Checking for Runtime Monitoring of Privacy Policies}},
+number ={CMU-CyLab-14-005}, 
+year = {2014},
+institution={Carnegie Mellon University}, 
+address = {Pittsburgh, Pennsylvania}, 
+pages = {73}, 
+note = {available at \nolinknolinkurl {https://kilthub.cmu.edu/ndownloader/files/11896619}}, 
+ options   = {contrib=\majorc},
+ areas  = {Runtime Monitoring, Privacy Policies, Temporal Logic, Model Checking}
+}
+
+
+@article{5GWHITEPAPER,
+  author    = {Elisa Bertino and
+               Syed Rafiul Hussain and
+               Omar Chowdhury},
+  title     = {{5G Security and Privacy: {A} Research Roadmap}},
+  journal   = {CoRR},
+  volume    = {abs/2003.13604},
+  year      = {2020},
+  nolinkurl        = {https://arxiv.org/abs/2003.13604},
+  archivePrefix = {arXiv},
+  eprint    = {2003.13604},
+  timestamp = {Wed, 01 Apr 2020 17:39:11 +0200},
+  bibnolinkurl     = {https://dblp.org/rec/journals/corr/abs-2003-13604.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org},
+  options   = {contrib=\majorc},
+  keywords  = {electronic},
+  note  =    {\sf (CRA CCC Whitepaper)}, 
+    areas  = {5G Security, Cellular Network Security, Privacy, Research Roadmap}
+}
+
+@article{EUNOMIA-TR,
+  author    = {Omar Chowdhury and
+               Deepak Garg and
+               Limin Jia and
+               Anupam Datta},
+  title     = {{Equivalence-based Security for Querying Encrypted Databases: Theory
+               and Application to Privacy Policy Audits}},
+  journal   = {CoRR},
+  volume    = {abs/1508.02448},
+  year      = {2015},
+  nolinkurl        = {http://arxiv.org/abs/1508.02448},
+  archivePrefix = {arXiv},
+  eprint    = {1508.02448},
+  timestamp = {Sun, 16 Aug 2020 15:23:08 +0200},
+  bibnolinkurl     = {https://dblp.org/rec/journals/corr/Chowdhury0JD15.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}, 
+   options   = {contrib=\majorc},
+   keywords  = {nonref, electronic}, 
+    areas  = {Encrypted Databases, Privacy Policy Audits, Security Analysis, Cryptography}
+}
+
+%%%%%%%%%%%%%%%%%%% OTHERS END %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

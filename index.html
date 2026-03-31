@@ -1,0 +1,1317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Omar Haider Chowdhury - SUNY Empire Innovation Scholar and Associate Professor of Computer Science at Stony Brook University. Research in computer security, privacy, and formal verification.">
+    <title>Omar Chowdhury - Stony Brook University</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --color-primary: #990000;
+            --color-secondary: #003366;
+            --color-text: #2c2c2c;
+            --color-text-light: #666;
+            --color-bg: #ffffff;
+            --color-bg-alt: #f8f9fa;
+            --color-border: #e0e0e0;
+            --spacing-unit: 1rem;
+        }
+
+        /* Skip to main content link for accessibility */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: var(--color-primary);
+            color: white;
+            padding: 8px;
+            text-decoration: none;
+            z-index: 100;
+        }
+
+        .skip-link:focus {
+            top: 0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+            color: var(--color-text);
+            line-height: 1.6;
+            background: var(--color-bg);
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            z-index: 1000;
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        nav .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        nav .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--color-primary);
+        }
+
+        nav ul {
+            display: flex;
+            gap: 2.5rem;
+            list-style: none;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--color-text);
+            font-weight: 400;
+            font-size: 0.95rem;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+
+        nav a:hover {
+            color: var(--color-primary);
+        }
+
+        nav a:focus {
+            outline: 2px solid var(--color-primary);
+            outline-offset: 4px;
+        }
+
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--color-primary);
+            transition: width 0.3s ease;
+        }
+
+        nav a:hover::after,
+        nav a.active::after {
+            width: 100%;
+        }
+
+        /* Hero Section */
+        .hero {
+            margin-top: 70px;
+            padding: 6rem 2rem;
+            background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        .hero .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 200px;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .hero-content h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            font-weight: 800;
+            color: var(--color-text);
+            margin-bottom: 0.5rem;
+            line-height: 1.2;
+        }
+
+        .hero-content .title {
+            font-size: 1.1rem;
+            color: var(--color-text-light);
+            margin-bottom: 0.5rem;
+        }
+
+        .hero-content .affiliation {
+            font-size: 1.1rem;
+            color: var(--color-secondary);
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero-content .contact {
+            color: var(--color-text-light);
+            font-size: 0.95rem;
+            line-height: 1.8;
+        }
+
+        .hero-content .contact strong {
+            color: var(--color-text);
+            font-weight: 600;
+        }
+
+        .hero-content .contact a {
+            color: var(--color-secondary);
+            text-decoration: none;
+        }
+
+        .hero-content .contact a:hover {
+            text-decoration: underline;
+        }
+
+        .hero-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            border: 4px solid white;
+        }
+
+        .hero-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Section Styles */
+        section {
+            padding: 5rem 2rem;
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        section:nth-child(even) {
+            background: var(--color-bg-alt);
+        }
+
+        section .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--color-primary);
+            margin-bottom: 2rem;
+            position: relative;
+            padding-bottom: 1rem;
+        }
+
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: var(--color-primary);
+        }
+
+        h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--color-secondary);
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            text-align: justify;
+        }
+
+        ul.plain-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul.plain-list li {
+            margin-bottom: 0.5rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        ul.plain-list li::before {
+            content: '▸';
+            position: absolute;
+            left: 0;
+            color: var(--color-primary);
+        }
+
+        /* Students Grid */
+        .students-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .student-card {
+            text-align: center;
+            padding: 1.5rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .student-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .student-photo {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin: 0 auto 1rem;
+            background: linear-gradient(135deg, #f0f0f0 0%, #e0e0e0 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: #999;
+            overflow: hidden;
+        }
+
+        .student-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .student-name {
+            font-weight: 600;
+            color: var(--color-text);
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        .student-status {
+            color: var(--color-text-light);
+            font-size: 0.9rem;
+        }
+
+        /* Teaching Links */
+        .teaching-list {
+            list-style: none;
+            padding: 0;
+            display: grid;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .teaching-list li {
+            padding: 1.5rem;
+            background: white;
+            border-left: 4px solid var(--color-secondary);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+        }
+
+        .teaching-list li:hover {
+            transform: translateX(5px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .teaching-list a {
+            text-decoration: none;
+            color: var(--color-secondary);
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        .teaching-list a:focus {
+            outline: 2px solid var(--color-primary);
+            outline-offset: 2px;
+        }
+
+        .teaching-list .term {
+            color: var(--color-text-light);
+            font-size: 0.9rem;
+            margin-top: 0.25rem;
+        }
+
+        /* Publications Integration */
+        #publications .container {
+            padding: 0;
+        }
+
+        /* Announcements */
+        .announcement-box {
+            background: #f0f4f8;
+            border-left: 4px solid var(--color-secondary);
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .announcement-box strong {
+            color: var(--color-secondary);
+        }
+
+        .announcement-box a {
+            color: var(--color-secondary);
+            text-decoration: underline;
+        }
+
+        .announcement-box a:hover {
+            color: var(--color-primary);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--color-text);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        footer p {
+            margin: 0;
+            text-align: center;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            nav ul {
+                gap: 1rem;
+                font-size: 0.85rem;
+            }
+
+            .hero .container {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .hero-image {
+                margin: 0 auto;
+            }
+
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+
+            h2 {
+                font-size: 2rem;
+            }
+
+            .students-grid {
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            }
+        }
+
+        /* Smooth scroll offset for fixed nav */
+        section {
+            scroll-margin-top: 80px;
+        }
+
+        /* CVEs & Vulnerability Disclosures Section */
+        .cve-intro {
+            margin-bottom: 2rem;
+        }
+
+        .cve-subsection-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: var(--color-secondary);
+            margin-top: 2.5rem;
+            margin-bottom: 1.25rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--color-border);
+        }
+
+        .cve-group {
+            margin-bottom: 2rem;
+            border-radius: 4px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        }
+
+        .cve-group-header {
+            background: var(--color-secondary);
+            color: white;
+            padding: 0.85rem 1.25rem;
+            font-family: 'Inter', sans-serif;
+            font-size: 1rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .cve-group-header.indirect {
+            background: #1e4976;  /* ~6:1 against white text */
+        }
+
+        .cve-group-paper-ref {
+            font-size: 0.8rem;
+            font-weight: 400;
+            opacity: 0.85;
+            font-style: italic;
+        }
+
+        .cve-entry {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 0.85rem 1.25rem;
+            background: white;
+            border-left: 4px solid var(--color-secondary);
+            border-bottom: 1px solid #f0f0f0;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            flex-wrap: wrap;
+        }
+
+        .cve-group-header.indirect + .cve-entry,
+        .cve-entry.indirect {
+            border-left-color: #4a6d93;
+        }
+
+        .cve-entry:last-child {
+            border-bottom: none;
+        }
+
+        .cve-entry:hover {
+            transform: translateX(4px);
+            box-shadow: 2px 4px 12px rgba(0,0,0,0.08);
+            z-index: 1;
+            position: relative;
+        }
+
+        .cve-id {
+            font-weight: 700;
+            color: var(--color-secondary);
+            text-decoration: none;
+            font-size: 0.92rem;
+            min-width: 165px;
+            letter-spacing: 0.02em;
+        }
+
+        .cve-id:hover {
+            color: var(--color-primary);
+            text-decoration: underline;
+        }
+
+        .cve-software {
+            flex: 1;
+            color: var(--color-text);
+            font-size: 0.92rem;
+            min-width: 140px;
+        }
+
+        .cve-desc {
+            width: 100%;
+            color: var(--color-text-light);
+            font-size: 0.88rem;
+            padding-top: 0.25rem;
+            font-style: italic;
+        }
+
+        .severity-badge {
+            display: inline-block;
+            padding: 0.2rem 0.65rem;
+            border-radius: 20px;
+            font-size: 0.78rem;
+            font-weight: 700;
+            white-space: nowrap;
+            color: #ffffff;
+        }
+
+        /* WCAG AA contrast ratios against white text: */
+        .severity-critical { background: #9b1c1c; }  /* ~7.5:1 */
+        .severity-high     { background: #7c2d12; }  /* ~8.2:1 */
+        .severity-medium   { background: #78350f; }  /* ~7.6:1 */
+        .severity-low      { background: #14532d; }  /* ~9.0:1 */
+
+        .cvd-badge {
+            display: inline-block;
+            background: #3b0764;   /* ~12:1 against white */
+            color: #ffffff;
+            padding: 0.2rem 0.65rem;
+            border-radius: 20px;
+            font-size: 0.78rem;
+            font-weight: 700;
+            white-space: nowrap;
+        }
+
+        /* Toggle button */
+        .cve-toggle-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-top: 1.5rem;
+            padding: 0.65rem 1.4rem;
+            background: var(--color-secondary);
+            color: #ffffff;
+            border: none;
+            border-radius: 4px;
+            font-family: 'Inter', sans-serif;
+            font-size: 0.95rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.2s ease;
+        }
+
+        .cve-toggle-btn:hover {
+            background: #004080;
+        }
+
+        .cve-toggle-btn:focus-visible {
+            outline: 3px solid var(--color-primary);
+            outline-offset: 3px;
+        }
+
+        .cve-toggle-icon {
+            display: inline-block;
+            transition: transform 0.3s ease;
+            flex-shrink: 0;
+        }
+
+        .cve-toggle-btn[aria-expanded="true"] .cve-toggle-icon {
+            transform: rotate(180deg);
+        }
+
+        .cve-note {
+            background: #f0f4f8;
+            border-left: 4px solid var(--color-secondary);
+            padding: 0.9rem 1.25rem;
+            color: var(--color-text-light);
+            font-size: 0.9rem;
+            font-style: italic;
+        }
+
+        .cve-stats-bar {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            margin-bottom: 2rem;
+            padding: 1.25rem 1.5rem;
+            background: var(--color-bg-alt);
+            border: 1px solid var(--color-border);
+            border-radius: 6px;
+        }
+
+        .cve-stat {
+            text-align: center;
+        }
+
+        .cve-stat-number {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--color-primary);
+            line-height: 1;
+        }
+
+        .cve-stat-label {
+            font-size: 0.82rem;
+            color: var(--color-text-light);
+            margin-top: 0.25rem;
+        }
+
+        .cve-stat-divider {
+            width: 1px;
+            background: var(--color-border);
+            align-self: stretch;
+        }
+    </style>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <nav aria-label="Main navigation">
+        <div class="container">
+            <div class="logo">Omar H. Chowdhury</div>
+            <ul role="list">
+                <li><a href="#about" aria-label="About section">About</a></li>
+                <li><a href="#research" aria-label="Research section">Research</a></li>
+                <!-- <li><a href="#announcements" aria-label="Announcements section">Announcements</a></li> -->
+                <li><a href="#cves" aria-label="CVEs and Vulnerability Disclosures section">CVEs</a></li>
+                <li><a href="#publications" aria-label="Publications section">Publications</a></li>
+                <li><a href="#students" aria-label="Students section">Students</a></li>
+                <li><a href="#teaching" aria-label="Teaching section">Teaching</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Omar Haider Chowdhury</h1>
+                <p class="title">SUNY Empire Innovation Scholar and Associate Professor</p>
+                <p class="affiliation">Department of Computer Science, Stony Brook University</p>
+                <div class="contact">
+                    <div><strong>Office:</strong> New Computer Science Building 363 (NCS 363)</div>
+                    <div><strong>Email:</strong> <a href="mailto:omar@cs.stonybrook.edu">omar@cs.stonybrook.edu</a></div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="omar.png" alt="Portrait photo of Omar Chowdhury">
+            </div>
+        </div>
+    </div>
+
+    <main id="main-content">
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I am currently a SUNY Empire Innovation Scholar and an Associate Professor of Computer Science at the Stony Brook University. Before joining Stony Brook University in Fall 2022, I was an Assistant Professor of Computer Science at the University of Iowa, where I was awarded the Dean's Scholar Award.</p>
+            <p>Before joining the University of Iowa in 2016, I was a post-doctoral research associate at Cylab, Carnegie Mellon University (Host: Prof. Anupam Datta) and Purdue University (Host: Prof. Ninghui Li). I received my Ph.D. in Computer Science from the University of Texas at San Antonio under the supervision of Prof. Jianwei Niu and Prof. William H. Winsborough (deceased). I received my undergraduate education in Computer Science and Engineering (CSE) at the Bangladesh University of Engineering and Technology (BUET).</p>
+        </div>
+    </section>
+
+    <section id="research">
+        <div class="container">
+            <h2>Research</h2>
+            <p>My research lies in Computer Security and Privacy. I generally use techniques from formal verification, automated reasoning, runtime verification, programming languages, software engineering, human-computer interaction, and measurement to solve practically-relevant computer security and privacy problems.</p>
+            <p>In the broad area of Computer Security and Privacy, I am particularly interested in problems in the software and network security domains. My current work includes addressing security and privacy problems in SSL/TLS, X.509 PKI, Cellular Network, Wi-Fi, Internet-of-Things (IoT), and Regulatory Compliance. I am also interested in solving fundamental problems in automated reasoning and formal verification.</p>
+            <p>The research of my group has been funded by both National Science Foundation (NSF) and Defense Advanced Research Projects Agency (DARPA), including a DARPA Young Faculty Award (YFA). Findings of our research have resulted in enhancements in the implementations and designs of widely used protocols (e.g., 4G LTE, 5G, WPA2 enterprise) and cryptographic libraries.</p>
+            
+            <h3>Awards</h3>
+            <ul class="plain-list">
+                <li> <a href="https://www.amazon.science/research-awards/recipients/omar-haider-chowdhury">Amazon Science Research Award, 2024</a>   </li>
+                <li><a href="https://www.stonybrook.edu/ceas/faculty/faculty-awards.html">Teachers Rated Excellent Educators by their Students (TREES) Award, College of Engineering and Applied Sciences, Stony Brook University, 2024</a></li>
+                <li><a href="https://www.sacmat.org/2023/awards.php">Test of Time Award, ACM SACMAT 2023</a></li>
+                <li> Dean's Scholar Award, College of Liberal Arts and Sciences (CLAS), The University of Iowa, 2022</li>
+                <li><a href="https://www.sigsac.org/ccs/CCS2021/ccs-awards.html">Best Paper Award (Runner Up), ACM CCS 2021</a></li>
+                <li>Best Student Paper Award, ACNS 2020</li>
+                <li><a href="https://www.darpa.mil/sites/default/files/attachment/2025-10/darpa-yfa-recipients-2025.pdf">DARPA Young Faculty Award (YFA), 2019</a></li>
+                <li><a href="https://2019.dasconline.org/awards-winners.html">Best Paper Award (Cybersecurity and Software Track), IEEE DASC 2019</a></li>
+                <li><a href="https://www.acsac.org/archive/">Best Paper Award, ACSAC 2019</a></li>
+                <li><a href="https://www.ndss-symposium.org/ndss2019/">Distinguished Paper Award Honorable Mention, NDSS 2019</a></li>
+                <li>CSAW North America Finalist, CSAW 2017 Applied Research Competition</li>
+                <li>Best Paper Award, ACM SACMAT 2012</li>
+                <li>Upsilon Pi Epsilon Programming Excellence Award, ACM ICPC World Finals</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- <section id="announcements">
+        <div class="container">
+            <h2>Announcements</h2>
+            <div class="announcement-box">
+                <p><strong>PhD Students:</strong> I am currently looking for 2-3 motivated Ph.D. students to join my group starting from Fall 2025. If you are interested, please reach out to me via email. Please consult the following URL for details: <a href="https://www.cs.stonybrook.edu/admissions/Graduate-Program" target="_blank">https://www.cs.stonybrook.edu/admissions/Graduate-Program</a></p>
+            </div>
+            <div class="announcement-box">
+                <p><strong>Undergraduate & Masters Students:</strong> I am also looking for Stony Brook undergraduate and Masters students who are interested in doing research in computer security and privacy. If you are interested, then please drop by my office or schedule an appointment with me through email.</p>
+            </div>
+            <div class="announcement-box">
+                <p><strong>Postdoc Position:</strong> I am also looking for 1 Postdoc to join my group. An ideal candidate will either have strong background on (1) formal verification, automated reasoning, and/or programming languages techniques, or (2) system security. If you are interested, then please reach out to me via email.</p>
+            </div>
+        </div>
+    </section> -->
+
+    <section id="cves">
+        <div class="container">
+            <h2>CVEs &amp; Vulnerability Disclosures</h2>
+            <p class="cve-intro">Findings from our research group have led to the discovery of numerous Common Vulnerabilities and Exposures (CVEs) and vulnerability disclosures (CVDs) in widely deployed cryptographic libraries, network protocols, and mobile operating systems.</p>
+
+            <div class="cve-stats-bar" role="region" aria-label="CVE summary statistics">
+                <div class="cve-stat">
+                    <div class="cve-stat-number" aria-hidden="true">25+</div>
+                    <div class="cve-stat-label">CVEs Discovered</div>
+                </div>
+                <div class="cve-stat-divider" role="separator" aria-hidden="true"></div>
+                <div class="cve-stat">
+                    <div class="cve-stat-number" aria-hidden="true">3</div>
+                    <div class="cve-stat-label">GSMA Hall of Fame Inductions (CVDs)</div>
+                </div>
+                <div class="cve-stat-divider" role="separator" aria-hidden="true"></div>
+                <div class="cve-stat">
+                    <div class="cve-stat-number" aria-hidden="true">2</div>
+                    <div class="cve-stat-label">Critical Severity Vulnerabilities</div>
+                </div>
+                <div class="cve-stat-divider" role="separator" aria-hidden="true"></div>
+                <div class="cve-stat">
+                    <div class="cve-stat-number" aria-hidden="true">10+</div>
+                    <div class="cve-stat-label">Affected Systems &amp; Libraries</div>
+                </div>
+            </div>
+
+            <button
+                id="cve-toggle-btn"
+                class="cve-toggle-btn"
+                aria-expanded="false"
+                aria-controls="cve-detail-list">
+                <span class="cve-toggle-label">Show Details</span>
+                <svg class="cve-toggle-icon" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+                    <path d="M2 5l6 6 6-6" stroke="currentColor" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+
+            <div id="cve-detail-list" hidden>
+
+                <!-- 2017 -->
+                <div class="cve-group">
+                    <div class="cve-group-header">
+                        <span>SymCerts</span>
+                        <span class="cve-group-paper-ref">IEEE S&amp;P 2017</span>
+                    </div>
+                    <div class="cve-entry">
+                        <span class="cve-id" aria-label="CVE-2017-1000415 in MatrixSSL">CVE-2017-1000415</span>
+                        <span class="cve-software">MatrixSSL</span>
+                        <span class="severity-badge severity-medium" aria-label="CVSS score 5.9, Medium severity">5.9 Medium</span>
+                    </div>
+                    <div class="cve-entry">
+                        <span class="cve-id" aria-label="CVE-2017-1000416 in axTLS Embedded SSL">CVE-2017-1000416</span>
+                        <span class="cve-software">axTLS Embedded SSL</span>
+                        <span class="severity-badge severity-medium" aria-label="CVSS score 5.3, Medium severity">5.3 Medium</span>
+                    </div>
+                    <div class="cve-entry">
+                        <span class="cve-id" aria-label="CVE-2017-1000417 in MatrixSSL">CVE-2017-1000417</span>
+                        <span class="cve-software">MatrixSSL</span>
+                        <span class="severity-badge severity-medium" aria-label="CVSS score 5.3, Medium severity">5.3 Medium</span>
+                    </div>
+                </div>
+
+                <!-- 2019 -->
+                <div class="cve-group">
+                    <div class="cve-group-header">
+                        <span>Bleichenbacher Signature Forgery (1st)</span>
+                        <span class="cve-group-paper-ref">NDSS 2019</span>
+                    </div>
+                    <div class="cve-entry">
+                        <span class="cve-id" aria-label="CVE-2018-15836 in Openswan">CVE-2018-15836</span>
+                        <span class="cve-software">Openswan</span>
+                        <span class="severity-badge severity-high" aria-label="CVSS score 7.5, High severity">7.5 High</span>
+                    </div>
+                    <div class="cve-entry">
+                        <span class="cve-id" aria-label="CVE-2018-16151 in strongSwan">CVE-2018-16151</span>
+                        <span class="cve-software">strongSwan</span>
+                        <span class="severity-badge severity-high" aria-label="CVSS score 7.5, High severity">7.5 High</span>
+                    </div>
+                    <div class="cve-entry">
+                        <span class="cve-id" aria-label="CVE-2018-16152 in strongSwan">CVE-2018-16152</span>
+                        <span class="cve-software">strongSwan</span>
+                        <span class="severity-badge severity-high" aria-label="CVSS score 7.5, High severity">7.5 High</span>
+                    </div>
+                    <div class="cve-entry">
+                        <span class="cve-id" aria-label="CVE-2018-16253 in axTLS Embedded SSL">CVE-2018-16253</span>
+                        <span class="cve-software">axTLS Embedded SSL</span>
+                        <span class="severity-badge severity-medium" aria-label="CVSS score 5.9, Medium severity">5.9 Medium</span>
+                    </div>
+                    <div class="cve-entry">
+                        <span class="cve-id" aria-label="CVE-2018-16150 in axTLS Embedded SSL">CVE-2018-16150</span>
+                        <span class="cve-software">axTLS Embedded SSL</span>
+                        <span class="severity-badge severity-medium" aria-label="CVSS score 5.9, Medium severity">5.9 Medium</span>
+                    </div>
+                    <div class="cve-entry">
+                        <span class="cve-id" aria-label="CVE-2018-16149 in axTLS Embedded SSL">CVE-2018-16149</span>
+                        <span class="cve-software">axTLS Embedded SSL</span>
+                        <span class="severity-badge severity-medium" aria-label="CVSS score 5.9, Medium severity">5.9 Medium</span>
+                    </div>
+                </div>
+                <div class="cve-note" role="note">
+                    Related work (ACSAC 2018) also uncovered vulnerabilities breaking content delivery in major apps including Bloomberg Businessweek+, Forbes Magazine, and Amazon Music. No CVEs were issued due to the sensitivity of the findings.
+                </div>
+
+                <div class="cve-group" style="margin-top: 1.5rem;">
+                    <div class="cve-group-header">
+                        <span>AT Command Interface — Bluetooth Vulnerabilities</span>
+                        <span class="cve-group-paper-ref">2019</span>
+                    </div>
+                    <div class="cve-entry">
+                        <span class="cve-id" aria-label="CVE-2019-16400 Denial of Service in Samsung devices">CVE-2019-16400</span>
+                        <span class="cve-software">Samsung Galaxy S8+, S3, Note 2</span>
+                        <span class="severity-badge severity-medium" aria-label="Denial of Service">Denial of Service</span>
+                        <span class="cve-desc">Samsung phones accept AT commands over Bluetooth, enabling Denial of Service attacks.</span>
+                    </div>
+                    <div class="cve-entry">
+                        <span class="cve-id" aria-label="CVE-2019-16401 Privacy Leak in Samsung devices">CVE-2019-16401</span>
+                        <span class="cve-software">Samsung Galaxy S8+, S3, Note 2</span>
+                        <span class="severity-badge severity-high" aria-label="Privacy Leak">Privacy Leak</span>
+                        <span class="cve-desc">Exposes sensitive information (IMSI, IMEI, call status, Internet service status) via AT commands over Bluetooth.</span>
+                    </div>
+                </div>
+
+                <div class="cve-group">
+                    <div class="cve-group-header">
+                        <span>Cellular Network Vulnerabilities (4G LTE / 5G)</span>
+                        <span class="cve-group-paper-ref">5GReasoner &amp; Related Work, 2019–2021</span>
+                    </div>
+                    <div class="cve-entry">
+                        <span class="cve-id" aria-label="GSMA CVD-2018-0014">CVD-2018-0014</span>
+                        <span class="cve-software">4G &amp; 5G Networks — ToRPEDO, PIERCER, IMSI-Cracking</span>
+                        <span class="cvd-badge" aria-label="GSMA Mobile Security Hall of Fame inductee">GSMA Hall of Fame</span>
+                        <span class="cve-desc">Three vulnerabilities exploiting side-channel weaknesses in 4G and 5G paging protocols.</span>
+                    </div>
+                    <div class="cve-entry">
+                        <span class="cve-id" aria-label="GSMA CVD-2019-0029">CVD-2019-0029</span>
+                        <span class="cve-software">5G Networks — 11 New Vulnerabilities</span>
+                        <span class="cvd-badge" aria-label="GSMA Mobile Security Hall of Fame inductee">GSMA Hall of Fame</span>
+                        <span class="cve-desc">Uncovered using 5GReasoner, a formal verification framework for 5G protocol security.</span>
+                    </div>
+                    <div class="cve-entry">
+                        <span class="cve-id" aria-label="GSMA CVD-2021-0050">CVD-2021-0050</span>
+                        <span class="cve-software">4G &amp; 5G NAS Layer — Samsung &amp; MediaTek Modems</span>
+                        <span class="cvd-badge" aria-label="GSMA Mobile Security Hall of Fame inductee">GSMA Hall of Fame</span>
+                        <span class="cve-desc">Three NAS layer baseband vulnerabilities: CVE-2021-25471 (Samsung), CVE-2021-25480 (Samsung), CVE-2021-40148 (MediaTek).</span>
+                    </div>
+                </div>
+
+                <!-- 2021 -->
+                <div class="cve-group">
+                    <div class="cve-group-header">
+                        <span>Wi-Fi Security</span>
+                        <span class="cve-group-paper-ref">ACM CCS 2021</span>
+                    </div>
+                    <div class="cve-entry">
+                        <span class="cve-id" aria-label="CVE-2020-27055 in Android">CVE-2020-27055</span>
+                        <span class="cve-software">Android</span>
+                        <span class="severity-badge severity-high" aria-label="CVSS score 7.5, High severity">7.5 High</span>
+                    </div>
+                    <div class="cve-entry">
+                        <span class="cve-id" aria-label="CVE-2021-21212 in Chrome OS">CVE-2021-21212</span>
+                        <span class="cve-software">Chrome OS</span>
+                        <span class="severity-badge severity-medium" aria-label="CVSS score 6.5, Medium severity">6.5 Medium</span>
+                    </div>
+                    <div class="cve-entry">
+                        <span class="cve-id" aria-label="CVE-2021-37964 in Chrome OS">CVE-2021-37964</span>
+                        <span class="cve-software">Chrome OS</span>
+                        <span class="severity-badge severity-low" aria-label="CVSS score 3.3, Low severity">3.3 Low</span>
+                    </div>
+                </div>
+
+                <div class="cve-group">
+                    <div class="cve-group-header">
+                        <span>Morpheus — Bleichenbacher Signature Forgery (2nd)</span>
+                        <span class="cve-group-paper-ref">ACM CCS 2021</span>
+                    </div>
+                    <div class="cve-entry">
+                        <span class="cve-id" aria-label="CVE-2020-36315 in RELIC">CVE-2020-36315</span>
+                        <span class="cve-software">RELIC</span>
+                        <span class="severity-badge severity-medium" aria-label="CVSS score 5.3, Medium severity">5.3 Medium</span>
+                    </div>
+                    <div class="cve-entry">
+                        <span class="cve-id" aria-label="CVE-2020-36316 in RELIC">CVE-2020-36316</span>
+                        <span class="cve-software">RELIC</span>
+                        <span class="severity-badge severity-medium" aria-label="CVSS score 5.5, Medium severity">5.5 Medium</span>
+                    </div>
+                    <div class="cve-entry">
+                        <span class="cve-id" aria-label="CVE-2021-30004 in wpa_supplicant">CVE-2021-30004</span>
+                        <span class="cve-software">wpa_supplicant</span>
+                        <span class="severity-badge severity-medium" aria-label="CVSS score 5.3, Medium severity">5.3 Medium</span>
+                    </div>
+                    <div class="cve-entry">
+                        <span class="cve-id" aria-label="CVE-2021-30130 in phpseclib">CVE-2021-30130</span>
+                        <span class="cve-software">phpseclib</span>
+                        <span class="severity-badge severity-high" aria-label="CVSS score 7.5, High severity">7.5 High</span>
+                    </div>
+                    <div class="cve-entry">
+                        <span class="cve-id" aria-label="CVE-2021-30246 in jsrsasign">CVE-2021-30246</span>
+                        <span class="cve-software">jsrsasign</span>
+                        <span class="severity-badge severity-critical" aria-label="CVSS score 9.1, Critical severity">9.1 Critical</span>
+                    </div>
+                    <div class="cve-entry">
+                        <span class="cve-id" aria-label="CVE-2022-24771 in node-forge">CVE-2022-24771</span>
+                        <span class="cve-software">node-forge</span>
+                        <span class="severity-badge severity-medium" aria-label="CVSS score 7.5, Medium severity">7.5 Medium</span>
+                    </div>
+                    <div class="cve-entry">
+                        <span class="cve-id" aria-label="CVE-2022-24772 in node-forge">CVE-2022-24772</span>
+                        <span class="cve-software">node-forge</span>
+                        <span class="severity-badge severity-medium" aria-label="CVSS score 7.5, Medium severity">7.5 Medium</span>
+                    </div>
+                    <div class="cve-entry">
+                        <span class="cve-id" aria-label="CVE-2022-24773 in node-forge">CVE-2022-24773</span>
+                        <span class="cve-software">node-forge</span>
+                        <span class="severity-badge severity-medium" aria-label="CVSS score 5.3, Medium severity">5.3 Medium</span>
+                    </div>
+                </div>
+
+                <!-- 2025 -->
+                <div class="cve-group">
+                    <div class="cve-group-header">
+                        <span>Name Constraint &amp; Checking Vulnerabilities</span>
+                        <span class="cve-group-paper-ref">FSE 2025</span>
+                    </div>
+                    <div class="cve-entry">
+                        <span class="cve-id" aria-label="CVE-2023-52892 in phpseclib">CVE-2023-52892</span>
+                        <span class="cve-software">phpseclib</span>
+                        <span class="severity-badge severity-high" aria-label="CVSS score 7.5, High severity">7.5 High</span>
+                    </div>
+                    <div class="cve-entry">
+                        <span class="cve-id" aria-label="CVE-2024-5991 in wolfSSL">CVE-2024-5991</span>
+                        <span class="cve-software">wolfSSL</span>
+                        <span class="severity-badge severity-high" aria-label="CVSS score 7.5, High severity">7.5 High</span>
+                    </div>
+                </div>
+
+                <div class="cve-group">
+                    <div class="cve-group-header">
+                        <span>Wi-Fi Security</span>
+                        <span class="cve-group-paper-ref">2025</span>
+                    </div>
+                    <div class="cve-entry">
+                        <a class="cve-id" href="https://nvd.nist.gov/vuln/detail/CVE-2025-20664" target="_blank" rel="noopener noreferrer" aria-label="CVE-2025-20664 Wi-Fi vulnerability, opens NVD in new tab">CVE-2025-20664</a>
+                        <span class="cve-software">MediaTek Wi-Fi Implementation</span>
+                    </div>
+                </div>
+
+            </div><!-- end #cve-detail-list -->
+        </div>
+    </section>
+
+    <section id="publications">
+        <div class="container">
+            <h2>Publications</h2>
+            <div id="publications-container">
+                <div class="loading" style="text-align: center; padding: 2rem; color: #666;">Loading publications...</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="students">
+        <div class="container">
+            <h2>Students</h2>
+            
+            <h3>Current PhD Students</h3>
+            <div class="students-grid">
+                <div class="student-card">
+                    <div class="student-photo"><img src="figs/rob.jpeg" alt="Headshot of Rob Lorch"></div>
+                    <div class="student-name"><a href="https://lorchrob.github.io/">Rob Lorch</a></div>
+                    <div class="student-status">PhD Candidate,<br> The University of Iowa<br>Co-advised with <a href="https://homepage.cs.uiowa.edu/~tinelli/">Dr. Cesare Tinelli</a></div>
+                </div>
+                <div class="student-card">
+                    <div class="student-photo"><img src="figs/benjir.jpeg" alt="Headshot of Benjir Alvee"></div>
+                    <div class="student-name">Benjir Alvee</div>
+                    <div class="student-status">PhD Student</div>
+                </div>
+                <div class="student-card">
+                    <div class="student-photo"><img src="figs/tasnim.jpeg" alt="Headshot of Tasnim Alam"></div>
+                    <div class="student-name">G M Tasnim Alam</div>
+                    <div class="student-status">PhD Student</div>
+                </div>
+                <div class="student-card">
+                    <div class="student-photo">👤</div>
+                    <div class="student-name">Aliakbar Sadeghi</div>
+                    <div class="student-status">PhD Student</div>
+                </div>
+                <div class="student-card">
+                    <div class="student-photo"><img src="figs/daniyal.jpeg" alt="Headshot of Daniyal Priwani"></div>
+                    <div class="student-name"><a href="https://www.linkedin.com/in/mdar96/">Daniyal Pirwani</a></div>
+                    <div class="student-status">PhD Student</div>
+                </div>
+                <div class="student-card">
+                    <div class="student-photo"><img src="figs/meher.webp" alt="Headshot of Meher Afroz"></div>
+                    <div class="student-name">Meher Afroz</div>
+                    <div class="student-status">PhD Student</div>
+                </div>
+                <div class="student-card">
+                    <div class="student-photo"><img src="figs/priscilla.jpg" alt="Headshot of Priscilla Danso"></div>
+                    <div class="student-name"><a href="https://priscilla100.github.io/">Priscilla Danso</a></div>
+                    <div class="student-status">PhD Student</div>
+                </div>
+            </div>
+
+            <h3>Alumni (PhD Students and Postdocs)</h3>
+            <div class="students-grid">
+                <div class="student-card">
+                    <div class="student-photo"><img src="figs/daniel.jpeg" alt="Headshot of Daniel Yahyazadeh"></div>
+                    <div class="student-name"><a href="https://www.linkedin.com/in/daniel-yahyazadeh-phd-0290b677/">Dr. Daniel (Moosa) Yahyazadeh</a></div>
+                    <div class="student-status">PhD<br>Formal Verification Engineer at <b>Apple</b></div>
+                </div>
+                <div class="student-card">
+                    <div class="student-photo"><img src="figs/mitziu.jpeg" alt="Headshot of Mitziu Echeverria"></div>
+                    <div class="student-name"><a href="https://www.linkedin.com/in/mitziu-echeverria-06a0528a/">Dr. Mitziu Echeverria</a></div>
+                    <div class="student-status">PhD<br> Independent Entrepreneur</div>
+                </div>
+                <div class="student-card">
+                    <div class="student-photo"><img src="figs/hammad.jpg" alt="Headshot of Muhammad Hammad Mazhar"></div>
+                    <div class="student-name"><a href="https://hammadmazhar1.github.io/">Muhammad Hammad Mazhar</a></div>
+                    <div class="student-status">PhD<br> Assistant Professor of Computer Science at <b>the University of Northern Colorado</b></div>
+                </div>
+                <div class="student-card">
+                    <div class="student-photo"><img src="figs/joyanta.jpeg" alt="Headshot of Joyanta Debnath"></div>
+                    <div class="student-name"><a href="https://joyantadebnath.github.io/homepage/">Dr. Joyanta Debnath</a></div>
+                    <div class="student-status">PhD<br>Cybersecurity Research Engineer at <b>GE Vernova</b></div>
+                </div>
+                <div class="student-card">
+                    <div class="student-photo"><img src="figs/christa.png" alt="Headshot of Christa Jenkins"></div>
+                    <div class="student-name"><a href="https://www.galois.com/team/christa-jenkins">Dr. Christa Jenkins</a></div>
+                    <div class="student-status">Postdoc<br>Research Engineer at <b>Galois</b></div>
+                </div>
+                <div class="student-card">
+                    <div class="student-photo">👤</div>
+                    <div class="student-name"><a href="https://www.linkedin.com/in/fareed-arif-a0782a199/">Dr. Muhammad Fareed Arif</a></div>
+                    <div class="student-status">Postdoc<br> Formal Verification Engineer at <b>AMD</b></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="teaching">
+        <div class="container">
+            <h2>Teaching</h2>
+            <h3>Courses Taught</h3>
+            <ul class="teaching-list">
+                <li>
+                    <a href="#">Undergraduate:Computer Security Fundamentals (CSE 331)</a>
+                    <div class="term">Stony Brook University - Spring 2026</div>
+                </li>
+                <li>
+                    <a href="#">Graduate: Network Security (CSE 508)</a>
+                    <div class="term">Stony Brook University - Spring 2026</div>
+                </li>
+                <li>
+                    <a href="#">Graduate: Network Security (CSE 508)</a>
+                    <div class="term">Stony Brook University - Spring 2025</div>
+                </li>
+                <li>
+                    <a href="#">Undergraduate:Computer Security Fundamentals (CSE 331)</a>
+                    <div class="term">Stony Brook University - Fall 2023</div>
+                </li>
+                <li>
+                    <a href="#">Topics in Computer Science: High-Assurance Software Design and Implementation</a>
+                    <div class="term">Stony Brook University - Spring 2023</div>
+                </li>
+                <li>
+                    <a href="#">Topics in Computer Science II: A Principled Approach to Security and Privacy</a>
+                    <div class="term">The University of Iowa - Fall 2018, Spring 2021, Fall 2021</div>
+                </li>
+                <li>
+                    <a href="#">Computer Security</a>
+                    <div class="term">The University of Iowa - Spring 2017, Spring 2018, Spring 2020, Spring 2021</div>
+                </li>
+                <li>
+                    <a href="#">Operating Systems</a>
+                    <div class="term">The University of Iowa - Fall 2016, Fall 2017, Spring 2019</div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    </main>
+
+    <footer>
+        <p>Copyright 2025 | All Rights Reserved - Omar Haider Chowdhury</p>
+    </footer>
+
+    <script>
+        (function () {
+            var btn    = document.getElementById('cve-toggle-btn');
+            var detail = document.getElementById('cve-detail-list');
+            var label  = btn ? btn.querySelector('.cve-toggle-label') : null;
+            if (!btn || !detail || !label) return;
+
+            btn.addEventListener('click', function () {
+                var isExpanded = btn.getAttribute('aria-expanded') === 'true';
+                btn.setAttribute('aria-expanded', String(!isExpanded));
+                detail.hidden = isExpanded;
+                label.textContent = isExpanded ? 'Show Details' : 'Hide Details';
+            });
+        })();
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bibtex-parse-js@0.0.24/bibtexParse.min.js"></script>
+    <script>
+        // Publications section integration
+        function normalizeAuthorName(name) {
+            name = name.trim();
+            if (name.includes(',')) {
+                const parts = name.split(',').map(p => p.trim());
+                if (parts.length === 2) {
+                    return `${parts[1]} ${parts[0]}`;
+                }
+            }
+            return name;
+        }
+
+        function formatAuthors(authors, editors) {
+            const names = authors || editors;
+            if (!names) return 'Unknown Authors';
+            
+            const authorList = names.split(/\s+and\s+/i);
+            const normalizedAuthors = authorList.map(name => normalizeAuthorName(name));
+            
+            if (!authors && editors) {
+                return "<b><em>Editors:</em></b> " + normalizedAuthors.join(', ');
+            }
+            
+            return normalizedAuthors.join(', ');
+        }
+
+        function cleanBraces(text) {
+            if (!text) return text;
+            
+            text = text.trim();
+            if (text.startsWith('{') && text.endsWith('}')) {
+                text = text.slice(1, -1).trim();
+            }
+            if (text.startsWith('{') && text.endsWith('}')) {
+                text = text.slice(1, -1).trim();
+            }
+            
+            text = text.replace(/\\bf\s*/g, '');
+            text = text.replace(/\{([^{}]+)\}/g, '$1');
+            
+            return text;
+        }
+
+        function getYear(entry) {
+            return entry.entryTags?.year || entry.entryTags?.YEAR || 'Unknown';
+        }
+
+        function getField(entry, fieldName) {
+            const value = entry.entryTags?.[fieldName] || 
+                   entry.entryTags?.[fieldName.toUpperCase()] || 
+                   entry.entryTags?.[fieldName.toLowerCase()] || '';
+            return cleanBraces(value);
+        }
+
+        function groupByYear(entries) {
+            const grouped = {};
+            entries.forEach(entry => {
+                const year = getYear(entry);
+                if (!grouped[year]) {
+                    grouped[year] = [];
+                }
+                grouped[year].push(entry);
+            });
+
+            const sortedYears = Object.keys(grouped).sort((a, b) => {
+                if (a === 'Unknown') return 1;
+                if (b === 'Unknown') return -1;
+                return parseInt(b) - parseInt(a);
+            });
+
+            return { grouped, sortedYears };
+        }
+
+        function renderPublications(entries) {
+            const container = document.getElementById('publications-container');
+            
+            if (entries.length === 0) {
+                container.innerHTML = '<div style="text-align:center;padding:2rem;color:#666;">No publications found in the BibTeX file</div>';
+                return;
+            }
+
+            const { grouped, sortedYears } = groupByYear(entries);
+            let html = '';
+
+            sortedYears.forEach(year => {
+                html += `
+                    <div style="margin-bottom: 3rem;">
+                        <h3 style="font-size: 1.8rem; color: var(--color-primary); margin-bottom: 1.5rem;">${year}</h3>
+                        ${grouped[year].map(entry => {
+                            const title = getField(entry, 'title');
+                            const author = getField(entry, 'author');
+                            const editor = getField(entry, 'editor');
+                            const booktitle = getField(entry, 'booktitle');
+                            const journal = getField(entry, 'journal');
+                            const areas = getField(entry, 'areas');
+                            const award = getField(entry, 'award');
+                            const pdf = getField(entry, 'pdf');
+                            
+                            // Parse areas if present
+                            let areasBadges = '';
+                            if (areas) {
+                                const areasList = areas.split(',').map(a => a.trim()).filter(a => a);
+                                areasBadges = areasList.map(area => 
+                                    `<span style="display: inline-block; background: #e3f2fd; color: #1565c0; padding: 0.25rem 0.6rem; border-radius: 4px; font-size: 0.85rem; margin-right: 0.5rem; margin-top: 0.5rem; font-family: 'Inter', sans-serif;">${area}</span>`
+                                ).join('');
+                            }
+                            
+                            // Check for award and render award name
+                            const hasAward = award && award.toLowerCase() !== 'no' && award.toLowerCase() !== 'false' && award.trim() !== '';
+                            const awardBadge = hasAward ? 
+                                `<span style="display: inline-block; background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%); color: #8b6914; padding: 0.4rem 0.8rem; border-radius: 4px; font-size: 0.85rem; font-weight: 600; margin-right: 0.5rem; margin-top: 0.5rem; border: 1px solid #e6c200; box-shadow: 0 2px 4px rgba(255, 215, 0, 0.3);">🏆 ${award}</span>` : '';
+                            
+                            // PDF link
+                            const pdfLink = pdf ? 
+                                `<a href="${pdf}" target="_blank" rel="noopener noreferrer" style="display: inline-block; background: var(--color-primary); color: white; padding: 0.4rem 0.8rem; border-radius: 4px; font-size: 0.85rem; font-weight: 500; margin-right: 0.5rem; margin-top: 0.5rem; text-decoration: none; transition: background 0.3s ease;" onmouseover="this.style.background='#cc0000'" onmouseout="this.style.background='var(--color-primary)'">📄 PDF</a>` : '';
+                            
+                            return `
+                            <div style="background: white; padding: 1.5rem; margin-bottom: 1.5rem; border-left: 4px solid ${hasAward ? '#ffd700' : 'var(--color-secondary)'}; box-shadow: 0 2px 8px rgba(0,0,0,0.05); transition: all 0.3s ease;">
+                                <div style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem; line-height: 1.4; color: var(--color-text);">${title || 'Untitled'}</div>
+                                <div style="color: var(--color-text-light); margin-bottom: 0.5rem;">${formatAuthors(author, editor)}</div>
+                                ${booktitle ? `<div style="font-style: italic; color: var(--color-text-light);">${booktitle}</div>` : ''}
+                                ${journal ? `<div style="font-style: italic; color: var(--color-text-light);">${journal}</div>` : ''}
+                                ${(awardBadge || areasBadges || pdfLink) ? `<div style="margin-top: 0.75rem; display: flex; flex-wrap: wrap; align-items: center;">${awardBadge}${pdfLink}${areasBadges}</div>` : ''}
+                            </div>
+                        `}).join('')}
+                    </div>
+                `;
+            });
+
+            container.innerHTML = html;
+        }
+
+        async function loadPublications() {
+            try {
+                const cacheBuster = new Date().getTime();
+                const response = await fetch(`omar.bib?v=${cacheBuster}`);
+                if (!response.ok) {
+                    throw new Error('Could not load omar.bib');
+                }
+                const bibtexContent = await response.text();
+                
+                try {
+                    const parsed = bibtexParse.toJSON(bibtexContent);
+                    renderPublications(parsed);
+                } catch (parseError) {
+                    console.error('Parse error:', parseError);
+                    document.getElementById('publications-container').innerHTML = 
+                        `<div style="background: #ffe5e5; border-left: 4px solid #c85a3f; padding: 1.5rem; color: #8b3a2b;">Error parsing omar.bib: ${parseError.message}<br>Check the console for details.</div>`;
+                }
+            } catch (error) {
+                console.error('Fetch error:', error);
+                document.getElementById('publications-container').innerHTML = 
+                    `<div style="background: #ffe5e5; border-left: 4px solid #c85a3f; padding: 1.5rem; color: #8b3a2b;">Error loading omar.bib: ${error.message}<br>Make sure omar.bib is in the same folder as this HTML file.</div>`;
+            }
+        }
+
+        loadPublications();
+
+        // Active nav highlighting on scroll
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('nav a');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= (sectionTop - 100)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
