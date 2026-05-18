@@ -735,7 +735,7 @@
 
             <div class="cve-stats-bar" role="region" aria-label="CVE summary statistics">
                 <div class="cve-stat">
-                    <div class="cve-stat-number" aria-hidden="true">25+</div>
+                    <div class="cve-stat-number" aria-hidden="true">39+</div>
                     <div class="cve-stat-label">CVEs Discovered</div>
                 </div>
                 <div class="cve-stat-divider" role="separator" aria-hidden="true"></div>
@@ -745,12 +745,12 @@
                 </div>
                 <div class="cve-stat-divider" role="separator" aria-hidden="true"></div>
                 <div class="cve-stat">
-                    <div class="cve-stat-number" aria-hidden="true">2</div>
+                    <div class="cve-stat-number" aria-hidden="true">3</div>
                     <div class="cve-stat-label">Critical Severity Vulnerabilities</div>
                 </div>
                 <div class="cve-stat-divider" role="separator" aria-hidden="true"></div>
                 <div class="cve-stat">
-                    <div class="cve-stat-number" aria-hidden="true">10+</div>
+                    <div class="cve-stat-number" aria-hidden="true">13+</div>
                     <div class="cve-stat-label">Affected Systems &amp; Libraries</div>
                 </div>
             </div>
@@ -835,7 +835,7 @@
                 <div class="cve-group" style="margin-top: 1.5rem;">
                     <div class="cve-group-header">
                         <span>AT Command Interface — Bluetooth Vulnerabilities</span>
-                        <span class="cve-group-paper-ref">2019</span>
+                        <span class="cve-group-paper-ref">ACSAC 2020</span>
                     </div>
                     <div class="cve-entry">
                         <span class="cve-id" aria-label="CVE-2019-16400 Denial of Service in Samsung devices">CVE-2019-16400</span>
@@ -967,11 +967,117 @@
                 <div class="cve-group">
                     <div class="cve-group-header">
                         <span>Wi-Fi Security</span>
-                        <span class="cve-group-paper-ref">2025</span>
+                        <span class="cve-group-paper-ref">IEEE S&P 2025</span>
                     </div>
                     <div class="cve-entry">
                         <a class="cve-id" href="https://nvd.nist.gov/vuln/detail/CVE-2025-20664" target="_blank" rel="noopener noreferrer" aria-label="CVE-2025-20664 Wi-Fi vulnerability, opens NVD in new tab">CVE-2025-20664</a>
                         <span class="cve-software">MediaTek Wi-Fi Implementation</span>
+                    </div>
+                </div>
+
+                <!-- 2026 -->
+                <div class="cve-group">
+                    <div class="cve-group-header">
+                        <span>5G Core Network Vulnerabilities &mdash; OpenAirInterface</span>
+                        <span class="cve-group-paper-ref">2026</span>
+                    </div>
+                    <div class="cve-entry">
+                        <a class="cve-id" href="https://nvd.nist.gov/vuln/detail/CVE-2026-30079" target="_blank" rel="noopener noreferrer" aria-label="CVE-2026-30079 in OpenAirInterface AMF, opens NVD in new tab">CVE-2026-30079</a>
+                        <span class="cve-software">OpenAirInterface v2.2.0 (AMF)</span>
+                        <span class="severity-badge severity-critical" aria-label="CVSS score 9.8, Critical severity">9.8 Critical</span>
+                        <span class="cve-desc">Out-of-sequence NAS messages cause incorrect state transition during UE registration, enabling authentication bypass.</span>
+                    </div>
+                    <div class="cve-entry">
+                        <a class="cve-id" href="https://nvd.nist.gov/vuln/detail/CVE-2026-30080" target="_blank" rel="noopener noreferrer" aria-label="CVE-2026-30080 in OpenAirInterface, opens NVD in new tab">CVE-2026-30080</a>
+                        <span class="cve-software">OpenAirInterface v2.2.0</span>
+                        <span class="severity-badge severity-high" aria-label="CVSS score 7.5, High severity">7.5 High</span>
+                        <span class="cve-desc">Accepts Security Mode Complete messages without integrity protection, allowing downgrade to null integrity (IA0).</span>
+                    </div>
+                    <div class="cve-entry">
+                        <a class="cve-id" href="https://nvd.nist.gov/vuln/detail/CVE-2026-30075" target="_blank" rel="noopener noreferrer" aria-label="CVE-2026-30075 in OpenAirInterface AUSF, opens NVD in new tab">CVE-2026-30075</a>
+                        <span class="cve-software">OpenAirInterface v2.2.0 (AUSF)</span>
+                        <span class="severity-badge severity-high" aria-label="CVSS score 7.5, High severity">7.5 High</span>
+                        <span class="cve-desc">Buffer overflow in AUSF when processing oversized NAS PDU responses during authentication.</span>
+                    </div>
+                    <div class="cve-entry">
+                        <a class="cve-id" href="https://nvd.nist.gov/vuln/detail/CVE-2026-30077" target="_blank" rel="noopener noreferrer" aria-label="CVE-2026-30077 in OpenAirInterface AMF, opens NVD in new tab">CVE-2026-30077</a>
+                        <span class="cve-software">OpenAirInterface v2.2.0 (AMF)</span>
+                        <span class="severity-badge severity-high" aria-label="CVSS score 7.5, High severity">7.5 High</span>
+                        <span class="cve-desc">AMF crashes during message decoding failures on malformed inputs, causing denial of service.</span>
+                    </div>
+                    <div class="cve-entry">
+                        <a class="cve-id" href="https://nvd.nist.gov/vuln/detail/CVE-2026-30078" target="_blank" rel="noopener noreferrer" aria-label="CVE-2026-30078 in OpenAirInterface OAI-CN5G-AMF, opens NVD in new tab">CVE-2026-30078</a>
+                        <span class="cve-software">OpenAirInterface OAI-CN5G-AMF v2.2.0</span>
+                        <span class="severity-badge severity-high" aria-label="CVSS score 7.5, High severity">7.5 High</span>
+                        <span class="cve-desc">AMF crashes on NGAP messages with invalid procedure codes or PDU types.</span>
+                    </div>
+                </div>
+
+                <div class="cve-group">
+                    <div class="cve-group-header">
+                        <span>5G Core Network Vulnerabilities &mdash; Free5GC</span>
+                        <span class="cve-group-paper-ref">2026</span>
+                    </div>
+                    <div class="cve-entry">
+                        <a class="cve-id" href="https://nvd.nist.gov/vuln/detail/CVE-2026-4531" target="_blank" rel="noopener noreferrer" aria-label="CVE-2026-4531 in Free5GC AMF, opens NVD in new tab">CVE-2026-4531</a>
+                        <span class="cve-software">Free5GC 4.1.0 (AMF)</span>
+                        <span class="severity-badge severity-medium" aria-label="CVSS score 5.3, Medium severity">5.3 Medium</span>
+                        <span class="cve-desc">Denial of service in AMF's HandleRegistrationComplete via resource mismanagement.</span>
+                    </div>
+                    <div class="cve-entry">
+                        <a class="cve-id" href="https://nvd.nist.gov/vuln/detail/CVE-2026-5661" target="_blank" rel="noopener noreferrer" aria-label="CVE-2026-5661 in Free5GC, opens NVD in new tab">CVE-2026-5661</a>
+                        <span class="cve-software">Free5GC 4.2.0</span>
+                        <span class="severity-badge severity-medium" aria-label="CVSS score 5.3, Medium severity">5.3 Medium</span>
+                        <span class="cve-desc">Unauthenticated remote denial of service in the NGSetupRequest handler.</span>
+                    </div>
+                    <div class="cve-entry">
+                        <a class="cve-id" href="https://nvd.nist.gov/vuln/detail/CVE-2026-5360" target="_blank" rel="noopener noreferrer" aria-label="CVE-2026-5360 in Free5GC aper, opens NVD in new tab">CVE-2026-5360</a>
+                        <span class="cve-software">Free5GC 4.2.0 (aper)</span>
+                        <span class="severity-badge severity-low" aria-label="CVSS score 3.7, Low severity">3.7 Low</span>
+                        <span class="cve-desc">Remotely exploitable type confusion in the aper component.</span>
+                    </div>
+                </div>
+
+                <div class="cve-group">
+                    <div class="cve-group-header">
+                        <span>5G Core Network Vulnerabilities &mdash; OMEC AMF</span>
+                        <span class="cve-group-paper-ref">2026</span>
+                    </div>
+                    <div class="cve-entry">
+                        <a class="cve-id" href="https://nvd.nist.gov/vuln/detail/CVE-2026-8349" target="_blank" rel="noopener noreferrer" aria-label="CVE-2026-8349 in omec-project AMF, opens NVD in new tab">CVE-2026-8349</a>
+                        <span class="cve-software">omec-project amf &le; 2.1.1</span>
+                        <span class="severity-badge severity-medium" aria-label="CVSS score 4.3, Medium severity">4.3 Medium</span>
+                        <span class="cve-desc">Authenticated remote memory corruption in the NGAP Message Handler.</span>
+                    </div>
+                    <div class="cve-entry">
+                        <a class="cve-id" href="https://nvd.nist.gov/vuln/detail/CVE-2026-8779" target="_blank" rel="noopener noreferrer" aria-label="CVE-2026-8779 in omec-project AMF, opens NVD in new tab">CVE-2026-8779</a>
+                        <span class="cve-software">omec-project amf &le; 2.1.3-dev</span>
+                        <span class="severity-badge severity-medium" aria-label="CVSS score 4.3, Medium severity">4.3 Medium</span>
+                        <span class="cve-desc">Memory corruption in NGSetupRequest via crafted InformationElement.</span>
+                    </div>
+                    <div class="cve-entry">
+                        <a class="cve-id" href="https://nvd.nist.gov/vuln/detail/CVE-2026-8780" target="_blank" rel="noopener noreferrer" aria-label="CVE-2026-8780 in omec-project AMF, opens NVD in new tab">CVE-2026-8780</a>
+                        <span class="cve-software">omec-project amf &le; 2.1.3-dev</span>
+                        <span class="severity-badge severity-medium" aria-label="CVSS score 4.3, Medium severity">4.3 Medium</span>
+                        <span class="cve-desc">Memory corruption in the NGAP Message Handler dispatcher (ngap/dispatcher.go).</span>
+                    </div>
+                    <div class="cve-entry">
+                        <a class="cve-id" href="https://nvd.nist.gov/vuln/detail/CVE-2026-8781" target="_blank" rel="noopener noreferrer" aria-label="CVE-2026-8781 in omec-project AMF, opens NVD in new tab">CVE-2026-8781</a>
+                        <span class="cve-software">omec-project amf &le; 2.1.3-dev</span>
+                        <span class="severity-badge severity-medium" aria-label="CVSS score 4.3, Medium severity">4.3 Medium</span>
+                        <span class="cve-desc">Null pointer dereference in RANConfiguration (ngap/handler.go); fixed in 2.2.0.</span>
+                    </div>
+                    <div class="cve-entry">
+                        <a class="cve-id" href="https://nvd.nist.gov/vuln/detail/CVE-2026-8782" target="_blank" rel="noopener noreferrer" aria-label="CVE-2026-8782 in omec-project AMF, opens NVD in new tab">CVE-2026-8782</a>
+                        <span class="cve-software">omec-project amf &le; 2.1.3-dev</span>
+                        <span class="severity-badge severity-medium" aria-label="CVSS score 4.3, Medium severity">4.3 Medium</span>
+                        <span class="cve-desc">Null pointer dereference in the NGAP Message Handler (ngap/handler.go).</span>
+                    </div>
+                    <div class="cve-entry">
+                        <a class="cve-id" href="https://nvd.nist.gov/vuln/detail/CVE-2026-8783" target="_blank" rel="noopener noreferrer" aria-label="CVE-2026-8783 in omec-project AMF, opens NVD in new tab">CVE-2026-8783</a>
+                        <span class="cve-software">omec-project amf &le; 2.1.3-dev</span>
+                        <span class="severity-badge severity-medium" aria-label="CVSS score 4.3, Medium severity">4.3 Medium</span>
+                        <span class="cve-desc">Null pointer dereference in UERadioCapabilityCheckResponse (ngap/dispatcher.go).</span>
                     </div>
                 </div>
 
@@ -1010,7 +1116,7 @@
                     <div class="student-status">PhD Student</div>
                 </div>
                 <div class="student-card">
-                    <div class="student-photo">👤</div>
+                    <div class="student-photo"><img src="figs/aliakbar.jpeg" alt="Headshot of Aliakbar Sadeghi"></div>
                     <div class="student-name">Aliakbar Sadeghi</div>
                     <div class="student-status">PhD Student</div>
                 </div>
@@ -1027,6 +1133,11 @@
                 <div class="student-card">
                     <div class="student-photo"><img src="figs/priscilla.jpg" alt="Headshot of Priscilla Danso"></div>
                     <div class="student-name"><a href="https://priscilla100.github.io/">Priscilla Danso</a></div>
+                    <div class="student-status">PhD Student</div>
+                </div>
+                <div class="student-card">
+                    <div class="student-photo"><img src="figs/kalokwu.jpg" alt="Headshot of Ka Lok Wu"></div>
+                    <div class="student-name"><a href="https://www.klwu.co/">Ka Lok Wu</a></div>
                     <div class="student-status">PhD Student</div>
                 </div>
             </div>
@@ -1059,7 +1170,7 @@
                     <div class="student-status">Postdoc<br>Research Engineer at <b>Galois</b></div>
                 </div>
                 <div class="student-card">
-                    <div class="student-photo">👤</div>
+                    <div class="student-photo"><img src="figs/fareed_arif.jpeg" alt="Headshot of Muhammad Fareed Arif"></div>
                     <div class="student-name"><a href="https://www.linkedin.com/in/fareed-arif-a0782a199/">Dr. Muhammad Fareed Arif</a></div>
                     <div class="student-status">Postdoc<br> Formal Verification Engineer at <b>AMD</b></div>
                 </div>
